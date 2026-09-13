@@ -110,4 +110,10 @@ python glucotrust.py --input data/local/cohort.json --out outputs/cohort --suppo
 
 ## 贡献与许可
 
-欢迎围绕数据适配、时间权重验证、实验设计提交 issue/PR。请附复现命令、数据许可说明和必要测试。代码采用 MIT 许可；外部数据不包含在此许可内。发布前请维护者确认项目名称与版权署名。
+欢迎围绕数据适配、时间权重验证、实验设计提交 issue/PR。请附复现命令、数据许可说明和必要测试。代码采用 MIT 许可；外部数据不包含在此许可内。
+
+## 作者
+
+**单嘉诚（Jiacheng Shan）** — [@maybedanshan](https://github.com/maybedanshan)
+
+数据科学与大数据方向本科研究项目。仅用于学术演示，不用于临床诊断、治疗决策或饮食用药建议。

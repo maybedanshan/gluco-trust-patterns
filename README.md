@@ -102,3 +102,9 @@ Original software: [MIT](LICENSE). External datasets retain their terms. Bundled
 See [contribution guidance](CONTRIBUTING.md), [changelog](CHANGELOG.md) and [release notes](docs/RELEASE.md). This is a source distribution, not a PyPI package or hosted service.
 
 The original v0.1 release has no prediction model. The current development tree adds a protocol-fixed exploratory GlucoPatterns benchmark; see its separate report before making any personalization claim. Next: external/native-sample validation and the effect of missing early history. Dropout mechanism calibration remains exploratory until collection windows and missingness provenance are established.
+
+## Author
+
+**Jiacheng Shan (单嘉诚)** — [@maybedanshan](https://github.com/maybedanshan)
+
+Undergraduate research project in data science and big data. Academic demonstration only; not for clinical diagnosis, treatment decisions, or dietary/medication advice.
