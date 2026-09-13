@@ -1,0 +1,2062 @@
+{
+  "protocol_sha256": "efd6cda4817078532f58036ae0daa3f71b7428a2c150a9ca046739631583ee66",
+  "code_sha256": {
+    "glucopatterns.py": "533e5c438b06c73470e91fbd18f41c09dc4b5f57ebba6394658c9b2965372ca6",
+    "cgmacros.py": "816a0ba675c73450d731b157e34b3633963a940067d7b76ccd89aa63cfe662c0",
+    "paired_analysis.py": "94f0443f903479ea95e84c137dc6f1a37f54ec5aae68df97c0f804eb56573453"
+  },
+  "source_sha256": {
+    "CGMacros-001.csv": "64cde6f844a1ac43ac7802ff2a1b793df88abced4db55dcb016ff74a952b4f8f",
+    "CGMacros-002.csv": "4ac368784dfc9e23c1dcec9f72a4c563ff2f31688ea1183868f825f418170782",
+    "CGMacros-003.csv": "68ef5d5e8fc882cc103d3603167cb11e727e15a00fc6f2259ec308eb8cf8f6e5",
+    "CGMacros-004.csv": "ebfc6d494e92c13c61743ba18f237be7407d119ffe8a9a10c9d7d8872a0043da",
+    "CGMacros-005.csv": "89435504eb7f0ee014f45813be71680808d8051a6df9d267dd98659be5742dd5",
+    "CGMacros-006.csv": "168487450f5537e5667e476b0f3d2f68f2a1711890d338f38643ae0c00a4c9d7",
+    "CGMacros-007.csv": "51da8ae0c4ca4c3bbd73c418458ab16ae68ee0e9c13aaa5339615be5de49fa54",
+    "CGMacros-008.csv": "228568d779ef41d6d6dd2cf179131a0ec6b973d080d5737c687ea8ca48f28e77",
+    "CGMacros-009.csv": "63f6e1b39dfe8dd575726e08362bf130542ca73f4bb50749c1a6b09d4e31071a",
+    "CGMacros-010.csv": "8f6de4da4896dc3c1c99a04a6085cef220c0006a7e964f3801036f69ff1bce10",
+    "CGMacros-011.csv": "a3ab6608159cb64f1a84557605f5038a91750bc87106e4e3d8ae338c9d885bed",
+    "CGMacros-012.csv": "9426dd6f42fcd2028247ec086695304b79cef7b673d70a9d7d290399e02672d5",
+    "CGMacros-013.csv": "9511d2cd59df3dbb2c035fb2a664c289ee2eec7e3642b5ed6007eb0a446d7fa4",
+    "CGMacros-014.csv": "179c0e52b651a4c4d3210aa19a330643e8644afab70ef7fc016fc1b2a77d97c3",
+    "CGMacros-015.csv": "73ba7b946be75856e19e4b6a70e82a87c68af1be1aeb077b60933b708e1899b1",
+    "CGMacros-016.csv": "c938b8f51b3e4c254aa1a3bf2c99db3cabf607f93c0e9e2c5fb3f35fb3f2a276",
+    "CGMacros-017.csv": "dbee217bde6eacf6a0d45ef7660d83e961a7be9360c9dad831fdd28f65b14ecb",
+    "CGMacros-018.csv": "30ae855abfda3e60e25317e2f64c952de8f6dc69e3dbb77d1d3d88f1ea592bdc",
+    "CGMacros-019.csv": "91448add8e2d85662069d7e7101c1f63130fd5c9a95b42173d43bf8070798822",
+    "CGMacros-020.csv": "da8315b4b582769e70cad4fb93a98fbc184d3ec5e11012a70d4e503454e4f2eb",
+    "CGMacros-021.csv": "316e1886d2e924886c328f737e1dcb0527719571df3f9863ba66eecd93d64188",
+    "CGMacros-022.csv": "da045e6cc6d011a07a625b57751689106e96ee835e94a90d6a48159f2a86dbab",
+    "CGMacros-023.csv": "83d082776e49d372caa9ead7e0720f366d6db501eb2809c608eb8607eb14c781",
+    "CGMacros-026.csv": "ecdeb0a46e55eb142452c259d8fc513e5231a7b18eff8b3f46d0a46d09141506",
+    "CGMacros-027.csv": "590f76188646cd9cb9641bafbc4f24c663857589bd78549d17697037b1b48027",
+    "CGMacros-028.csv": "2b7d5c9e11f51b7f6630f585c1855bb063446fcc01d75bdccf0139799272d1f6",
+    "CGMacros-029.csv": "bc0c39befffc1d574c8ac955ed5411e5b3456fc209726816e033c71d82286d1b",
+    "CGMacros-030.csv": "ee8cfe35580461ae1e09eb34350fb3cab7a5ccad3adf64ec64d85af4244f6cfc",
+    "CGMacros-031.csv": "785bc3d1a5ab5061841b1837386ec45ef3e3d3a82416c0ecc4716d981e83cd81",
+    "CGMacros-032.csv": "f43419bd406fe6e5d73956787c058e97cba702f4fb5136fe4e165b89a4607832",
+    "CGMacros-033.csv": "f0c30c52375bc0a45bbf9ac709e99635395c5e979614d99631c351498e56f214",
+    "CGMacros-034.csv": "dbe83d3cb77a1d031b2ff779758b8208dae2c25449921a4378914b0209f4c738",
+    "CGMacros-035.csv": "b00be8afb37e72fbdf0c4675b6798bccc4a653f0af6fa030c684bafbaa10b820",
+    "CGMacros-036.csv": "08ac01b1fade15040d1bca12cef49ddbc974befb7243862fc7db252f8df0d9b8",
+    "CGMacros-038.csv": "1fc8c0af8bb4854b0e669355bbb821b7c0810a93a62872cd89d7fae86baf4f24",
+    "CGMacros-039.csv": "acd3d25dceb167e6741280c9385a45375b67f40c2932e3b585b27f2695a8a43a",
+    "CGMacros-041.csv": "5521f85cae1d09a588cf7317cdbb6a766cdb5e8f725d58b46c09099000dd0cb4",
+    "CGMacros-042.csv": "a96fd530ce69b94896451b8c3af881ffbf035f2bc14e2e78bf023d9b6daef236",
+    "CGMacros-043.csv": "0f5879b4579d9663467ca66dc8a082b0c99c6086c3d79470788a50f9cfaaa4e5",
+    "CGMacros-044.csv": "2b724a2d55b3dabce829eeb1450644a90694cd33aa2c0282d9f46f0437d3976f",
+    "CGMacros-045.csv": "e20bced28247d522aa74d5dc055590bc9a88c761d56a5e72c0b8d7c5c28b5ecd",
+    "CGMacros-046.csv": "f4a09f231e327e065481d67ca7aa0812122547bc6f1e5123cb22d426151e8c4a",
+    "CGMacros-047.csv": "5151b1cf7890611cbe2c64187c946baaea717e3fbfe41469517d59ad54b4e806",
+    "CGMacros-048.csv": "f1544bcc1d2323f471ff7b7fc2b89b001ad1094ed4c8dd2678e5ab1bbbe4e9f5",
+    "CGMacros-049.csv": "2526a253a0775bcdc2db8934960b55981a5430fe1925c7c32701a3b802d062c7"
+  },
+  "numpy_version": "2.3.5",
+  "features": [
+    "Calories",
+    "Carbs",
+    "Protein",
+    "Fat",
+    "Fiber",
+    "premeal_mean",
+    "premeal_change_per_minute",
+    "hour_sin",
+    "hour_cos"
+  ],
+  "audit": [
+    {
+      "participant": "CGMacros-001",
+      "recorded": 43,
+      "eligible": 26,
+      "reasons": {
+        "next_meal_within120": 6,
+        "prior_meal_within150": 10,
+        "nutrition_invalid": 1,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "Lunch": 9,
+        "Dinner": 4,
+        "Snacks": 4,
+        "Breakfast": 9
+      }
+    },
+    {
+      "participant": "CGMacros-002",
+      "recorded": 37,
+      "eligible": 20,
+      "reasons": {
+        "next_meal_within120": 9,
+        "prior_meal_within150": 10,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "Breakfast": 9,
+        "Lunch": 8,
+        "Snacks": 1,
+        "Dinner": 2
+      }
+    },
+    {
+      "participant": "CGMacros-003",
+      "recorded": 35,
+      "eligible": 29,
+      "reasons": {
+        "dual_window_incomplete": 2,
+        "next_meal_within120": 2,
+        "prior_meal_within150": 2
+      },
+      "meal_types": {
+        "Lunch": 10,
+        "Dinner": 7,
+        "Breakfast": 8,
+        "Snacks": 4
+      }
+    },
+    {
+      "participant": "CGMacros-004",
+      "recorded": 62,
+      "eligible": 24,
+      "reasons": {
+        "next_meal_within120": 23,
+        "prior_meal_within150": 26,
+        "dual_window_incomplete": 2
+      },
+      "meal_types": {
+        "Lunch": 10,
+        "Breakfast": 8,
+        "Snacks": 4,
+        "Dinner": 2
+      }
+    },
+    {
+      "participant": "CGMacros-005",
+      "recorded": 46,
+      "eligible": 25,
+      "reasons": {
+        "dual_window_incomplete": 2,
+        "next_meal_within120": 11,
+        "prior_meal_within150": 13
+      },
+      "meal_types": {
+        "dinner": 3,
+        "Breakfast": 9,
+        "Lunch": 9,
+        "snack": 4
+      }
+    },
+    {
+      "participant": "CGMacros-006",
+      "recorded": 38,
+      "eligible": 28,
+      "reasons": {
+        "prior_meal_within150": 6,
+        "next_meal_within120": 5
+      },
+      "meal_types": {
+        "lunch": 10,
+        "dinner": 6,
+        "breakfast": 10,
+        "snack": 2
+      }
+    },
+    {
+      "participant": "CGMacros-007",
+      "recorded": 17,
+      "eligible": 0,
+      "reasons": {
+        "dual_window_incomplete": 17,
+        "next_meal_within120": 1,
+        "prior_meal_within150": 1
+      },
+      "meal_types": {}
+    },
+    {
+      "participant": "CGMacros-008",
+      "recorded": 30,
+      "eligible": 27,
+      "reasons": {
+        "dual_window_incomplete": 3
+      },
+      "meal_types": {
+        "dinner": 9,
+        "breakfast": 9,
+        "lunch": 9
+      }
+    },
+    {
+      "participant": "CGMacros-009",
+      "recorded": 41,
+      "eligible": 31,
+      "reasons": {
+        "next_meal_within120": 4,
+        "prior_meal_within150": 5,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "dinner": 4,
+        "breakfast": 9,
+        "snack 1": 1,
+        "snack": 7
+      }
+    },
+    {
+      "participant": "CGMacros-010",
+      "recorded": 45,
+      "eligible": 28,
+      "reasons": {
+        "next_meal_within120": 8,
+        "prior_meal_within150": 10
+      },
+      "meal_types": {
+        "lunch": 9,
+        "dinner": 4,
+        "breakfast": 10,
+        "snack": 5
+      }
+    },
+    {
+      "participant": "CGMacros-011",
+      "recorded": 39,
+      "eligible": 33,
+      "reasons": {
+        "next_meal_within120": 2,
+        "prior_meal_within150": 3,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 8,
+        "snack": 7,
+        "dinner": 9,
+        "breakfast": 9
+      }
+    },
+    {
+      "participant": "CGMacros-012",
+      "recorded": 33,
+      "eligible": 31,
+      "reasons": {
+        "prior_meal_within150": 1,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "dinner": 9,
+        "breakfast": 9,
+        "snack": 2,
+        "Dinner": 1
+      }
+    },
+    {
+      "participant": "CGMacros-013",
+      "recorded": 39,
+      "eligible": 30,
+      "reasons": {
+        "prior_meal_within150": 5,
+        "next_meal_within120": 4,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "Lunch": 10,
+        "dinner": 7,
+        "Breakfast": 9,
+        "snack": 4
+      }
+    },
+    {
+      "participant": "CGMacros-014",
+      "recorded": 40,
+      "eligible": 29,
+      "reasons": {
+        "next_meal_within120": 5,
+        "prior_meal_within150": 6,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "Lunch": 10,
+        "dinner": 6,
+        "Breakfast": 9,
+        "snack": 4
+      }
+    },
+    {
+      "participant": "CGMacros-015",
+      "recorded": 52,
+      "eligible": 20,
+      "reasons": {
+        "next_meal_within120": 18,
+        "prior_meal_within150": 20,
+        "dual_window_incomplete": 3
+      },
+      "meal_types": {
+        "Lunch": 7,
+        "Breakfast": 8,
+        "dinner": 2,
+        "snack": 3
+      }
+    },
+    {
+      "participant": "CGMacros-016",
+      "recorded": 28,
+      "eligible": 27,
+      "reasons": {
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "snack": 7,
+        "Breakfast": 9,
+        "Lunch": 5,
+        "dinner": 6
+      }
+    },
+    {
+      "participant": "CGMacros-017",
+      "recorded": 48,
+      "eligible": 21,
+      "reasons": {
+        "dual_window_incomplete": 2,
+        "prior_meal_within150": 15,
+        "next_meal_within120": 13
+      },
+      "meal_types": {
+        "dinner": 3,
+        "Breakfast": 9,
+        "Lunch": 7,
+        "snack": 2
+      }
+    },
+    {
+      "participant": "CGMacros-018",
+      "recorded": 39,
+      "eligible": 26,
+      "reasons": {
+        "dual_window_incomplete": 1,
+        "next_meal_within120": 6,
+        "prior_meal_within150": 6
+      },
+      "meal_types": {
+        "Lunch": 10,
+        "Dinner": 5,
+        "Breakfast": 9,
+        "snack": 1,
+        "Snack": 1
+      }
+    },
+    {
+      "participant": "CGMacros-019",
+      "recorded": 48,
+      "eligible": 24,
+      "reasons": {
+        "next_meal_within120": 13,
+        "prior_meal_within150": 15,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "Lunch": 8,
+        "snack": 3,
+        "dinner": 5,
+        "Breakfast": 8
+      }
+    },
+    {
+      "participant": "CGMacros-020",
+      "recorded": 41,
+      "eligible": 29,
+      "reasons": {
+        "next_meal_within120": 6,
+        "prior_meal_within150": 6,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "Lunch": 9,
+        "dinner": 7,
+        "Breakfast": 9,
+        "snack": 4
+      }
+    },
+    {
+      "participant": "CGMacros-021",
+      "recorded": 39,
+      "eligible": 26,
+      "reasons": {
+        "next_meal_within120": 6,
+        "prior_meal_within150": 8,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "Lunch": 10,
+        "dinner": 6,
+        "Breakfast": 9,
+        "snack": 1
+      }
+    },
+    {
+      "participant": "CGMacros-022",
+      "recorded": 42,
+      "eligible": 31,
+      "reasons": {
+        "next_meal_within120": 5,
+        "prior_meal_within150": 5,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "Lunch": 8,
+        "dinner": 7,
+        "Breakfast": 9,
+        "snack": 7
+      }
+    },
+    {
+      "participant": "CGMacros-023",
+      "recorded": 42,
+      "eligible": 36,
+      "reasons": {
+        "next_meal_within120": 2,
+        "prior_meal_within150": 2,
+        "dual_window_incomplete": 2
+      },
+      "meal_types": {
+        "Lunch": 10,
+        "dinner": 11,
+        "Breakfast": 9,
+        "snack": 6
+      }
+    },
+    {
+      "participant": "CGMacros-026",
+      "recorded": 36,
+      "eligible": 25,
+      "reasons": {
+        "next_meal_within120": 4,
+        "prior_meal_within150": 4,
+        "dual_window_incomplete": 4
+      },
+      "meal_types": {
+        "Lunch": 7,
+        "dinner": 8,
+        "snack": 3,
+        "Breakfast": 7
+      }
+    },
+    {
+      "participant": "CGMacros-027",
+      "recorded": 36,
+      "eligible": 26,
+      "reasons": {
+        "dual_window_incomplete": 2,
+        "next_meal_within120": 4,
+        "prior_meal_within150": 5
+      },
+      "meal_types": {
+        "dinner": 7,
+        "breakfast": 9,
+        "lunch": 9,
+        "snack": 1
+      }
+    },
+    {
+      "participant": "CGMacros-028",
+      "recorded": 34,
+      "eligible": 29,
+      "reasons": {
+        "prior_meal_within150": 2,
+        "next_meal_within120": 1,
+        "dual_window_incomplete": 2
+      },
+      "meal_types": {
+        "lunch": 10,
+        "dinner": 8,
+        "snack": 3,
+        "breakfast": 8
+      }
+    },
+    {
+      "participant": "CGMacros-029",
+      "recorded": 30,
+      "eligible": 29,
+      "reasons": {
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "dinner": 10,
+        "breakfast": 9
+      }
+    },
+    {
+      "participant": "CGMacros-030",
+      "recorded": 28,
+      "eligible": 27,
+      "reasons": {
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "dinner": 10,
+        "breakfast": 7
+      }
+    },
+    {
+      "participant": "CGMacros-031",
+      "recorded": 54,
+      "eligible": 21,
+      "reasons": {
+        "next_meal_within120": 23,
+        "prior_meal_within150": 23,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "breakfast": 9,
+        "lunch": 9,
+        "dinner": 2,
+        "snack": 1
+      }
+    },
+    {
+      "participant": "CGMacros-032",
+      "recorded": 20,
+      "eligible": 20,
+      "reasons": {},
+      "meal_types": {
+        "breakfast": 9,
+        "lunch": 9,
+        "dinner": 2
+      }
+    },
+    {
+      "participant": "CGMacros-033",
+      "recorded": 33,
+      "eligible": 32,
+      "reasons": {
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "snack": 2,
+        "dinner": 11,
+        "breakfast": 9
+      }
+    },
+    {
+      "participant": "CGMacros-034",
+      "recorded": 49,
+      "eligible": 22,
+      "reasons": {
+        "next_meal_within120": 14,
+        "prior_meal_within150": 17
+      },
+      "meal_types": {
+        "breakfast": 9,
+        "snack": 3,
+        "lunch": 5,
+        "dinner": 5
+      }
+    },
+    {
+      "participant": "CGMacros-035",
+      "recorded": 27,
+      "eligible": 27,
+      "reasons": {},
+      "meal_types": {
+        "lunch": 10,
+        "breakfast": 9,
+        "dinner": 8
+      }
+    },
+    {
+      "participant": "CGMacros-036",
+      "recorded": 30,
+      "eligible": 29,
+      "reasons": {
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "dinner": 10,
+        "breakfast": 9
+      }
+    },
+    {
+      "participant": "CGMacros-038",
+      "recorded": 40,
+      "eligible": 26,
+      "reasons": {
+        "next_meal_within120": 7,
+        "prior_meal_within150": 7
+      },
+      "meal_types": {
+        "lunch": 9,
+        "dinner": 5,
+        "breakfast": 10,
+        "snack": 2
+      }
+    },
+    {
+      "participant": "CGMacros-039",
+      "recorded": 34,
+      "eligible": 29,
+      "reasons": {
+        "next_meal_within120": 2,
+        "prior_meal_within150": 2,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "snack": 5,
+        "dinner": 5,
+        "breakfast": 9
+      }
+    },
+    {
+      "participant": "CGMacros-041",
+      "recorded": 48,
+      "eligible": 34,
+      "reasons": {
+        "next_meal_within120": 7,
+        "prior_meal_within150": 8
+      },
+      "meal_types": {
+        "lunch": 10,
+        "snack": 10,
+        "dinner": 5,
+        "breakfast": 9
+      }
+    },
+    {
+      "participant": "CGMacros-042",
+      "recorded": 22,
+      "eligible": 20,
+      "reasons": {
+        "next_meal_within120": 1,
+        "prior_meal_within150": 1
+      },
+      "meal_types": {
+        "lunch": 9,
+        "breakfast": 9,
+        "snack": 1,
+        "dinner": 1
+      }
+    },
+    {
+      "participant": "CGMacros-043",
+      "recorded": 64,
+      "eligible": 26,
+      "reasons": {
+        "next_meal_within120": 23,
+        "prior_meal_within150": 25,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "snack": 4,
+        "breakfast": 9,
+        "dinner": 3
+      }
+    },
+    {
+      "participant": "CGMacros-044",
+      "recorded": 43,
+      "eligible": 25,
+      "reasons": {
+        "next_meal_within120": 8,
+        "prior_meal_within150": 10,
+        "dual_window_incomplete": 2
+      },
+      "meal_types": {
+        "lunch": 8,
+        "dinner": 5,
+        "breakfast": 9,
+        "snack": 3
+      }
+    },
+    {
+      "participant": "CGMacros-045",
+      "recorded": 32,
+      "eligible": 26,
+      "reasons": {
+        "dual_window_incomplete": 2,
+        "next_meal_within120": 2,
+        "prior_meal_within150": 2
+      },
+      "meal_types": {
+        "breakfast": 9,
+        "lunch": 8,
+        "snack": 6,
+        "dinner": 3
+      }
+    },
+    {
+      "participant": "CGMacros-046",
+      "recorded": 29,
+      "eligible": 21,
+      "reasons": {
+        "dual_window_incomplete": 2,
+        "next_meal_within120": 3,
+        "prior_meal_within150": 3
+      },
+      "meal_types": {
+        "lunch": 10,
+        "breakfast": 7,
+        "dinner": 4
+      }
+    },
+    {
+      "participant": "CGMacros-047",
+      "recorded": 29,
+      "eligible": 26,
+      "reasons": {
+        "dual_window_incomplete": 1,
+        "next_meal_within120": 1,
+        "prior_meal_within150": 1
+      },
+      "meal_types": {
+        "lunch": 9,
+        "dinner": 10,
+        "breakfast": 7
+      }
+    },
+    {
+      "participant": "CGMacros-048",
+      "recorded": 36,
+      "eligible": 31,
+      "reasons": {
+        "next_meal_within120": 2,
+        "prior_meal_within150": 3,
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "breakfast": 9,
+        "dinner": 9,
+        "snack": 3
+      }
+    },
+    {
+      "participant": "CGMacros-049",
+      "recorded": 28,
+      "eligible": 27,
+      "reasons": {
+        "dual_window_incomplete": 1
+      },
+      "meal_types": {
+        "lunch": 10,
+        "dinner": 8,
+        "breakfast": 9
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "setting": "unseen",
+      "history_budget": 0,
+      "participants": 44,
+      "meals": 1179,
+      "macro_mae": {
+        "baseline": 24.247087544166096,
+        "pooled": 23.886500414543544,
+        "personalized": 23.886500414543544
+      },
+      "personalization_improvement": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "per_person": [
+        {
+          "participant": "CGMacros-001",
+          "meals": 26,
+          "baseline": 18.461507914347283,
+          "pooled": 18.956886913083267,
+          "personalized": 18.956886913083267
+        },
+        {
+          "participant": "CGMacros-002",
+          "meals": 20,
+          "baseline": 23.380768051737608,
+          "pooled": 22.989815751137765,
+          "personalized": 22.989815751137765
+        },
+        {
+          "participant": "CGMacros-003",
+          "meals": 29,
+          "baseline": 21.94687958297633,
+          "pooled": 21.215919102331206,
+          "personalized": 21.215919102331206
+        },
+        {
+          "participant": "CGMacros-004",
+          "meals": 24,
+          "baseline": 14.895884289357339,
+          "pooled": 14.289406631172291,
+          "personalized": 14.289406631172291
+        },
+        {
+          "participant": "CGMacros-005",
+          "meals": 25,
+          "baseline": 19.312214325233295,
+          "pooled": 18.964592728578893,
+          "personalized": 18.964592728578893
+        },
+        {
+          "participant": "CGMacros-006",
+          "meals": 28,
+          "baseline": 15.986140993140722,
+          "pooled": 16.28674897614822,
+          "personalized": 16.28674897614822
+        },
+        {
+          "participant": "CGMacros-008",
+          "meals": 27,
+          "baseline": 20.618716226563176,
+          "pooled": 19.908506141189733,
+          "personalized": 19.908506141189733
+        },
+        {
+          "participant": "CGMacros-009",
+          "meals": 31,
+          "baseline": 28.766687476057598,
+          "pooled": 28.79688399048531,
+          "personalized": 28.79688399048531
+        },
+        {
+          "participant": "CGMacros-010",
+          "meals": 28,
+          "baseline": 17.709581787443177,
+          "pooled": 17.447919152698443,
+          "personalized": 17.447919152698443
+        },
+        {
+          "participant": "CGMacros-011",
+          "meals": 33,
+          "baseline": 17.576265510550545,
+          "pooled": 16.95422118401842,
+          "personalized": 16.95422118401842
+        },
+        {
+          "participant": "CGMacros-012",
+          "meals": 31,
+          "baseline": 25.09402690502454,
+          "pooled": 24.70192357544939,
+          "personalized": 24.70192357544939
+        },
+        {
+          "participant": "CGMacros-013",
+          "meals": 30,
+          "baseline": 24.981779382787455,
+          "pooled": 25.0947271487431,
+          "personalized": 25.0947271487431
+        },
+        {
+          "participant": "CGMacros-014",
+          "meals": 29,
+          "baseline": 21.816943784019546,
+          "pooled": 21.188972435276185,
+          "personalized": 21.188972435276185
+        },
+        {
+          "participant": "CGMacros-015",
+          "meals": 20,
+          "baseline": 18.850519237436014,
+          "pooled": 18.868587850183683,
+          "personalized": 18.868587850183683
+        },
+        {
+          "participant": "CGMacros-016",
+          "meals": 27,
+          "baseline": 16.526727781901215,
+          "pooled": 15.76359576896902,
+          "personalized": 15.76359576896902
+        },
+        {
+          "participant": "CGMacros-017",
+          "meals": 21,
+          "baseline": 14.085907790712705,
+          "pooled": 13.879441728562629,
+          "personalized": 13.879441728562629
+        },
+        {
+          "participant": "CGMacros-018",
+          "meals": 26,
+          "baseline": 15.2154504984671,
+          "pooled": 15.226561847044893,
+          "personalized": 15.226561847044893
+        },
+        {
+          "participant": "CGMacros-019",
+          "meals": 24,
+          "baseline": 16.577638366468,
+          "pooled": 15.893841114016398,
+          "personalized": 15.893841114016398
+        },
+        {
+          "participant": "CGMacros-020",
+          "meals": 29,
+          "baseline": 20.722520461424967,
+          "pooled": 20.25503927803797,
+          "personalized": 20.25503927803797
+        },
+        {
+          "participant": "CGMacros-021",
+          "meals": 26,
+          "baseline": 14.577137748026274,
+          "pooled": 14.138984706679292,
+          "personalized": 14.138984706679292
+        },
+        {
+          "participant": "CGMacros-022",
+          "meals": 31,
+          "baseline": 13.792664866468863,
+          "pooled": 13.817297279664308,
+          "personalized": 13.817297279664308
+        },
+        {
+          "participant": "CGMacros-023",
+          "meals": 36,
+          "baseline": 23.88570014610814,
+          "pooled": 23.608145426503285,
+          "personalized": 23.608145426503285
+        },
+        {
+          "participant": "CGMacros-026",
+          "meals": 25,
+          "baseline": 19.5888703670411,
+          "pooled": 19.15506088905467,
+          "personalized": 19.15506088905467
+        },
+        {
+          "participant": "CGMacros-027",
+          "meals": 26,
+          "baseline": 18.393326171359206,
+          "pooled": 18.383758131926932,
+          "personalized": 18.383758131926932
+        },
+        {
+          "participant": "CGMacros-028",
+          "meals": 29,
+          "baseline": 18.734645885264968,
+          "pooled": 18.246983893664584,
+          "personalized": 18.246983893664584
+        },
+        {
+          "participant": "CGMacros-029",
+          "meals": 29,
+          "baseline": 13.381805275682224,
+          "pooled": 13.170104808267599,
+          "personalized": 13.170104808267599
+        },
+        {
+          "participant": "CGMacros-030",
+          "meals": 27,
+          "baseline": 47.86567391590968,
+          "pooled": 46.988225806314055,
+          "personalized": 46.988225806314055
+        },
+        {
+          "participant": "CGMacros-031",
+          "meals": 21,
+          "baseline": 20.250177209349992,
+          "pooled": 20.042398086610586,
+          "personalized": 20.042398086610586
+        },
+        {
+          "participant": "CGMacros-032",
+          "meals": 20,
+          "baseline": 17.075606304329398,
+          "pooled": 17.42471537289417,
+          "personalized": 17.42471537289417
+        },
+        {
+          "participant": "CGMacros-033",
+          "meals": 32,
+          "baseline": 46.11643861323862,
+          "pooled": 45.4686256663684,
+          "personalized": 45.4686256663684
+        },
+        {
+          "participant": "CGMacros-034",
+          "meals": 22,
+          "baseline": 19.99847422080791,
+          "pooled": 20.145528754835592,
+          "personalized": 20.145528754835592
+        },
+        {
+          "participant": "CGMacros-035",
+          "meals": 27,
+          "baseline": 41.846395516062806,
+          "pooled": 41.38692858112664,
+          "personalized": 41.38692858112664
+        },
+        {
+          "participant": "CGMacros-036",
+          "meals": 29,
+          "baseline": 40.72635954528594,
+          "pooled": 39.100505425008116,
+          "personalized": 39.100505425008116
+        },
+        {
+          "participant": "CGMacros-038",
+          "meals": 26,
+          "baseline": 23.077464855606674,
+          "pooled": 22.80787013519182,
+          "personalized": 22.80787013519182
+        },
+        {
+          "participant": "CGMacros-039",
+          "meals": 29,
+          "baseline": 59.682613067477064,
+          "pooled": 58.79562486950644,
+          "personalized": 58.79562486950644
+        },
+        {
+          "participant": "CGMacros-041",
+          "meals": 34,
+          "baseline": 36.57768372288909,
+          "pooled": 35.74173984526907,
+          "personalized": 35.74173984526907
+        },
+        {
+          "participant": "CGMacros-042",
+          "meals": 20,
+          "baseline": 26.027041501350006,
+          "pooled": 25.6732583260139,
+          "personalized": 25.6732583260139
+        },
+        {
+          "participant": "CGMacros-043",
+          "meals": 26,
+          "baseline": 15.832595985938335,
+          "pooled": 15.649947055147573,
+          "personalized": 15.649947055147573
+        },
+        {
+          "participant": "CGMacros-044",
+          "meals": 25,
+          "baseline": 16.104066025955827,
+          "pooled": 15.637793747332367,
+          "personalized": 15.637793747332367
+        },
+        {
+          "participant": "CGMacros-045",
+          "meals": 26,
+          "baseline": 38.562553892507616,
+          "pooled": 37.73308600254432,
+          "personalized": 37.73308600254432
+        },
+        {
+          "participant": "CGMacros-046",
+          "meals": 21,
+          "baseline": 33.211335944817364,
+          "pooled": 33.23434679787703,
+          "personalized": 33.23434679787703
+        },
+        {
+          "participant": "CGMacros-047",
+          "meals": 26,
+          "baseline": 35.460963544224555,
+          "pooled": 34.727076878327864,
+          "personalized": 34.727076878327864
+        },
+        {
+          "participant": "CGMacros-048",
+          "meals": 31,
+          "baseline": 12.638930967056815,
+          "pooled": 12.458276734752214,
+          "personalized": 12.458276734752214
+        },
+        {
+          "participant": "CGMacros-049",
+          "meals": 27,
+          "baseline": 40.937166284901195,
+          "pooled": 40.78614370190836,
+          "personalized": 40.78614370190836
+        }
+      ]
+    },
+    {
+      "setting": "history",
+      "history_budget": 3,
+      "participants": 44,
+      "meals": 739,
+      "macro_mae": {
+        "baseline": 22.80935365401766,
+        "pooled": 22.519472529138472,
+        "personalized": 22.31466332738457
+      },
+      "personalization_improvement": 0.20480920175390407,
+      "ci95": [
+        -0.7486880265323886,
+        1.1742828440336517
+      ],
+      "per_person": [
+        {
+          "participant": "CGMacros-001",
+          "meals": 16,
+          "baseline": 18.888062401526767,
+          "pooled": 19.532544240276312,
+          "personalized": 13.766371406538935
+        },
+        {
+          "participant": "CGMacros-002",
+          "meals": 10,
+          "baseline": 25.20890554028375,
+          "pooled": 24.92684244249339,
+          "personalized": 24.430355209074182
+        },
+        {
+          "participant": "CGMacros-003",
+          "meals": 19,
+          "baseline": 16.824443776424772,
+          "pooled": 16.17661179856234,
+          "personalized": 18.022970531698967
+        },
+        {
+          "participant": "CGMacros-004",
+          "meals": 14,
+          "baseline": 14.386008039701347,
+          "pooled": 13.981145056492064,
+          "personalized": 15.138561933271166
+        },
+        {
+          "participant": "CGMacros-005",
+          "meals": 15,
+          "baseline": 13.081044995499978,
+          "pooled": 12.718942638199294,
+          "personalized": 12.718770805079565
+        },
+        {
+          "participant": "CGMacros-006",
+          "meals": 18,
+          "baseline": 14.553762085792762,
+          "pooled": 14.826317920219102,
+          "personalized": 12.548829337929606
+        },
+        {
+          "participant": "CGMacros-008",
+          "meals": 17,
+          "baseline": 17.119791520596884,
+          "pooled": 16.666947279487843,
+          "personalized": 15.043565832439645
+        },
+        {
+          "participant": "CGMacros-009",
+          "meals": 21,
+          "baseline": 24.31148639339928,
+          "pooled": 24.44452046353088,
+          "personalized": 17.94962786085317
+        },
+        {
+          "participant": "CGMacros-010",
+          "meals": 18,
+          "baseline": 15.284349447133835,
+          "pooled": 15.471940440141452,
+          "personalized": 17.568644308119975
+        },
+        {
+          "participant": "CGMacros-011",
+          "meals": 23,
+          "baseline": 18.610599996555155,
+          "pooled": 17.956840954971156,
+          "personalized": 16.97127867068515
+        },
+        {
+          "participant": "CGMacros-012",
+          "meals": 21,
+          "baseline": 24.356515838614573,
+          "pooled": 23.91238196050988,
+          "personalized": 24.345432464517764
+        },
+        {
+          "participant": "CGMacros-013",
+          "meals": 20,
+          "baseline": 26.446424743663897,
+          "pooled": 26.711105347807965,
+          "personalized": 23.442500927708974
+        },
+        {
+          "participant": "CGMacros-014",
+          "meals": 19,
+          "baseline": 22.625278785794734,
+          "pooled": 21.89586248207546,
+          "personalized": 21.95237036265922
+        },
+        {
+          "participant": "CGMacros-015",
+          "meals": 10,
+          "baseline": 16.382115389948808,
+          "pooled": 16.491129689209362,
+          "personalized": 16.19784149443273
+        },
+        {
+          "participant": "CGMacros-016",
+          "meals": 17,
+          "baseline": 15.106960518720134,
+          "pooled": 13.992994355099407,
+          "personalized": 13.716052277033441
+        },
+        {
+          "participant": "CGMacros-017",
+          "meals": 11,
+          "baseline": 11.029466573887882,
+          "pooled": 10.833609794192212,
+          "personalized": 10.275877562200721
+        },
+        {
+          "participant": "CGMacros-018",
+          "meals": 16,
+          "baseline": 16.75948206000903,
+          "pooled": 16.63168791405918,
+          "personalized": 15.628611285205414
+        },
+        {
+          "participant": "CGMacros-019",
+          "meals": 14,
+          "baseline": 15.106594163400837,
+          "pooled": 14.580505087877528,
+          "personalized": 16.541075604491454
+        },
+        {
+          "participant": "CGMacros-020",
+          "meals": 19,
+          "baseline": 21.103387603181123,
+          "pooled": 20.68552772751622,
+          "personalized": 19.74623011383488
+        },
+        {
+          "participant": "CGMacros-021",
+          "meals": 16,
+          "baseline": 13.271893170271348,
+          "pooled": 12.922466273217704,
+          "personalized": 12.627740746075586
+        },
+        {
+          "participant": "CGMacros-022",
+          "meals": 21,
+          "baseline": 14.494884220378575,
+          "pooled": 14.423701816450382,
+          "personalized": 12.048450280660509
+        },
+        {
+          "participant": "CGMacros-023",
+          "meals": 26,
+          "baseline": 22.4309662752283,
+          "pooled": 21.959792885906946,
+          "personalized": 20.926956125722203
+        },
+        {
+          "participant": "CGMacros-026",
+          "meals": 15,
+          "baseline": 19.488003700374435,
+          "pooled": 18.98680682425667,
+          "personalized": 19.033302772115388
+        },
+        {
+          "participant": "CGMacros-027",
+          "meals": 16,
+          "baseline": 17.08353468374189,
+          "pooled": 17.140298337001763,
+          "personalized": 16.254567685125167
+        },
+        {
+          "participant": "CGMacros-028",
+          "meals": 19,
+          "baseline": 21.84595073715881,
+          "pooled": 21.357547898016932,
+          "personalized": 22.775622283380695
+        },
+        {
+          "participant": "CGMacros-029",
+          "meals": 19,
+          "baseline": 10.110902999359498,
+          "pooled": 10.132803438368647,
+          "personalized": 13.357066891478176
+        },
+        {
+          "participant": "CGMacros-030",
+          "meals": 17,
+          "baseline": 41.44077621938596,
+          "pooled": 40.83856781453039,
+          "personalized": 45.33498822161121
+        },
+        {
+          "participant": "CGMacros-031",
+          "meals": 11,
+          "baseline": 17.38391316171197,
+          "pooled": 17.603967167225154,
+          "personalized": 17.869816195821787
+        },
+        {
+          "participant": "CGMacros-032",
+          "meals": 10,
+          "baseline": 18.891856304329398,
+          "pooled": 18.744110151103715,
+          "personalized": 11.003692609359597
+        },
+        {
+          "participant": "CGMacros-033",
+          "meals": 22,
+          "baseline": 45.91231980107436,
+          "pooled": 45.21061564512857,
+          "personalized": 44.17295164198888
+        },
+        {
+          "participant": "CGMacros-034",
+          "meals": 12,
+          "baseline": 20.823783306913374,
+          "pooled": 21.126498116506625,
+          "personalized": 14.43641888576704
+        },
+        {
+          "participant": "CGMacros-035",
+          "meals": 17,
+          "baseline": 39.2312103529767,
+          "pooled": 39.056595800843326,
+          "personalized": 35.99036874878665
+        },
+        {
+          "participant": "CGMacros-036",
+          "meals": 19,
+          "baseline": 42.98632792310684,
+          "pooled": 41.669015715902965,
+          "personalized": 41.38086067049297
+        },
+        {
+          "participant": "CGMacros-038",
+          "meals": 16,
+          "baseline": 18.87385081579612,
+          "pooled": 18.779142866869556,
+          "personalized": 18.98459260050203
+        },
+        {
+          "participant": "CGMacros-039",
+          "meals": 19,
+          "baseline": 55.245899502082565,
+          "pooled": 54.75278405454954,
+          "personalized": 63.73352046975307
+        },
+        {
+          "participant": "CGMacros-041",
+          "meals": 24,
+          "baseline": 35.48465266371875,
+          "pooled": 34.73997339852689,
+          "personalized": 35.84768555682761
+        },
+        {
+          "participant": "CGMacros-042",
+          "meals": 10,
+          "baseline": 26.50425033063332,
+          "pooled": 26.109509205908093,
+          "personalized": 28.278369554187773
+        },
+        {
+          "participant": "CGMacros-043",
+          "meals": 16,
+          "baseline": 14.490806882391354,
+          "pooled": 14.52698798318829,
+          "personalized": 17.5483331998232
+        },
+        {
+          "participant": "CGMacros-044",
+          "meals": 15,
+          "baseline": 16.469109188978592,
+          "pooled": 16.13811623965385,
+          "personalized": 16.365757374492095
+        },
+        {
+          "participant": "CGMacros-045",
+          "meals": 16,
+          "baseline": 35.73144174199153,
+          "pooled": 35.26916280180526,
+          "personalized": 39.977087691612496
+        },
+        {
+          "participant": "CGMacros-046",
+          "meals": 11,
+          "baseline": 29.873762561318,
+          "pooled": 29.78641151638906,
+          "personalized": 35.29752988700281
+        },
+        {
+          "participant": "CGMacros-047",
+          "meals": 16,
+          "baseline": 29.9059375,
+          "pooled": 29.361998320722996,
+          "personalized": 30.85007185800853
+        },
+        {
+          "participant": "CGMacros-048",
+          "meals": 21,
+          "baseline": 11.254592824790006,
+          "pooled": 10.857254936907836,
+          "personalized": 11.90776217702924
+        },
+        {
+          "participant": "CGMacros-049",
+          "meals": 17,
+          "baseline": 37.196254034929794,
+          "pooled": 36.92520448039054,
+          "personalized": 29.836704289521304
+        }
+      ]
+    },
+    {
+      "setting": "history",
+      "history_budget": 5,
+      "participants": 44,
+      "meals": 739,
+      "macro_mae": {
+        "baseline": 22.80935365401766,
+        "pooled": 22.519472529138472,
+        "personalized": 21.18955783611412
+      },
+      "personalization_improvement": 1.3299146930243528,
+      "ci95": [
+        0.3439125713237661,
+        2.468676732684704
+      ],
+      "per_person": [
+        {
+          "participant": "CGMacros-001",
+          "meals": 16,
+          "baseline": 18.888062401526767,
+          "pooled": 19.532544240276312,
+          "personalized": 12.122992581386164
+        },
+        {
+          "participant": "CGMacros-002",
+          "meals": 10,
+          "baseline": 25.20890554028375,
+          "pooled": 24.92684244249339,
+          "personalized": 23.10750013622325
+        },
+        {
+          "participant": "CGMacros-003",
+          "meals": 19,
+          "baseline": 16.824443776424772,
+          "pooled": 16.17661179856234,
+          "personalized": 18.37585932763843
+        },
+        {
+          "participant": "CGMacros-004",
+          "meals": 14,
+          "baseline": 14.386008039701347,
+          "pooled": 13.981145056492064,
+          "personalized": 14.436503242207145
+        },
+        {
+          "participant": "CGMacros-005",
+          "meals": 15,
+          "baseline": 13.081044995499978,
+          "pooled": 12.718942638199294,
+          "personalized": 13.497268035113471
+        },
+        {
+          "participant": "CGMacros-006",
+          "meals": 18,
+          "baseline": 14.553762085792762,
+          "pooled": 14.826317920219102,
+          "personalized": 11.488607014516907
+        },
+        {
+          "participant": "CGMacros-008",
+          "meals": 17,
+          "baseline": 17.119791520596884,
+          "pooled": 16.666947279487843,
+          "personalized": 14.996702949566233
+        },
+        {
+          "participant": "CGMacros-009",
+          "meals": 21,
+          "baseline": 24.31148639339928,
+          "pooled": 24.44452046353088,
+          "personalized": 9.168308266750387
+        },
+        {
+          "participant": "CGMacros-010",
+          "meals": 18,
+          "baseline": 15.284349447133835,
+          "pooled": 15.471940440141452,
+          "personalized": 14.48972760525406
+        },
+        {
+          "participant": "CGMacros-011",
+          "meals": 23,
+          "baseline": 18.610599996555155,
+          "pooled": 17.956840954971156,
+          "personalized": 18.203779682817085
+        },
+        {
+          "participant": "CGMacros-012",
+          "meals": 21,
+          "baseline": 24.356515838614573,
+          "pooled": 23.91238196050988,
+          "personalized": 24.283920535312074
+        },
+        {
+          "participant": "CGMacros-013",
+          "meals": 20,
+          "baseline": 26.446424743663897,
+          "pooled": 26.711105347807965,
+          "personalized": 21.82362124179084
+        },
+        {
+          "participant": "CGMacros-014",
+          "meals": 19,
+          "baseline": 22.625278785794734,
+          "pooled": 21.89586248207546,
+          "personalized": 21.87725515732435
+        },
+        {
+          "participant": "CGMacros-015",
+          "meals": 10,
+          "baseline": 16.382115389948808,
+          "pooled": 16.491129689209362,
+          "personalized": 13.985888668947831
+        },
+        {
+          "participant": "CGMacros-016",
+          "meals": 17,
+          "baseline": 15.106960518720134,
+          "pooled": 13.992994355099407,
+          "personalized": 13.622390695318723
+        },
+        {
+          "participant": "CGMacros-017",
+          "meals": 11,
+          "baseline": 11.029466573887882,
+          "pooled": 10.833609794192212,
+          "personalized": 10.282201454481681
+        },
+        {
+          "participant": "CGMacros-018",
+          "meals": 16,
+          "baseline": 16.75948206000903,
+          "pooled": 16.63168791405918,
+          "personalized": 15.333605225555292
+        },
+        {
+          "participant": "CGMacros-019",
+          "meals": 14,
+          "baseline": 15.106594163400837,
+          "pooled": 14.580505087877528,
+          "personalized": 17.298390013111295
+        },
+        {
+          "participant": "CGMacros-020",
+          "meals": 19,
+          "baseline": 21.103387603181123,
+          "pooled": 20.68552772751622,
+          "personalized": 19.51883605389625
+        },
+        {
+          "participant": "CGMacros-021",
+          "meals": 16,
+          "baseline": 13.271893170271348,
+          "pooled": 12.922466273217704,
+          "personalized": 12.516590529692834
+        },
+        {
+          "participant": "CGMacros-022",
+          "meals": 21,
+          "baseline": 14.494884220378575,
+          "pooled": 14.423701816450382,
+          "personalized": 11.712193903541904
+        },
+        {
+          "participant": "CGMacros-023",
+          "meals": 26,
+          "baseline": 22.4309662752283,
+          "pooled": 21.959792885906946,
+          "personalized": 20.926956125722203
+        },
+        {
+          "participant": "CGMacros-026",
+          "meals": 15,
+          "baseline": 19.488003700374435,
+          "pooled": 18.98680682425667,
+          "personalized": 18.603657910528646
+        },
+        {
+          "participant": "CGMacros-027",
+          "meals": 16,
+          "baseline": 17.08353468374189,
+          "pooled": 17.140298337001763,
+          "personalized": 15.118587645851838
+        },
+        {
+          "participant": "CGMacros-028",
+          "meals": 19,
+          "baseline": 21.84595073715881,
+          "pooled": 21.357547898016932,
+          "personalized": 23.426147216362722
+        },
+        {
+          "participant": "CGMacros-029",
+          "meals": 19,
+          "baseline": 10.110902999359498,
+          "pooled": 10.132803438368647,
+          "personalized": 13.062569675600754
+        },
+        {
+          "participant": "CGMacros-030",
+          "meals": 17,
+          "baseline": 41.44077621938596,
+          "pooled": 40.83856781453039,
+          "personalized": 41.094921920274594
+        },
+        {
+          "participant": "CGMacros-031",
+          "meals": 11,
+          "baseline": 17.38391316171197,
+          "pooled": 17.603967167225154,
+          "personalized": 16.417013237258672
+        },
+        {
+          "participant": "CGMacros-032",
+          "meals": 10,
+          "baseline": 18.891856304329398,
+          "pooled": 18.744110151103715,
+          "personalized": 11.137701318311139
+        },
+        {
+          "participant": "CGMacros-033",
+          "meals": 22,
+          "baseline": 45.91231980107436,
+          "pooled": 45.21061564512857,
+          "personalized": 43.98577824104291
+        },
+        {
+          "participant": "CGMacros-034",
+          "meals": 12,
+          "baseline": 20.823783306913374,
+          "pooled": 21.126498116506625,
+          "personalized": 12.00061357294906
+        },
+        {
+          "participant": "CGMacros-035",
+          "meals": 17,
+          "baseline": 39.2312103529767,
+          "pooled": 39.056595800843326,
+          "personalized": 35.197556432584996
+        },
+        {
+          "participant": "CGMacros-036",
+          "meals": 19,
+          "baseline": 42.98632792310684,
+          "pooled": 41.669015715902965,
+          "personalized": 40.85645777456153
+        },
+        {
+          "participant": "CGMacros-038",
+          "meals": 16,
+          "baseline": 18.87385081579612,
+          "pooled": 18.779142866869556,
+          "personalized": 18.745003776682786
+        },
+        {
+          "participant": "CGMacros-039",
+          "meals": 19,
+          "baseline": 55.245899502082565,
+          "pooled": 54.75278405454954,
+          "personalized": 57.74526050949697
+        },
+        {
+          "participant": "CGMacros-041",
+          "meals": 24,
+          "baseline": 35.48465266371875,
+          "pooled": 34.73997339852689,
+          "personalized": 32.063100515978135
+        },
+        {
+          "participant": "CGMacros-042",
+          "meals": 10,
+          "baseline": 26.50425033063332,
+          "pooled": 26.109509205908093,
+          "personalized": 26.26698495174271
+        },
+        {
+          "participant": "CGMacros-043",
+          "meals": 16,
+          "baseline": 14.490806882391354,
+          "pooled": 14.52698798318829,
+          "personalized": 16.354165818060235
+        },
+        {
+          "participant": "CGMacros-044",
+          "meals": 15,
+          "baseline": 16.469109188978592,
+          "pooled": 16.13811623965385,
+          "personalized": 16.735031162272417
+        },
+        {
+          "participant": "CGMacros-045",
+          "meals": 16,
+          "baseline": 35.73144174199153,
+          "pooled": 35.26916280180526,
+          "personalized": 36.6971512340714
+        },
+        {
+          "participant": "CGMacros-046",
+          "meals": 11,
+          "baseline": 29.873762561318,
+          "pooled": 29.78641151638906,
+          "personalized": 33.51965987092093
+        },
+        {
+          "participant": "CGMacros-047",
+          "meals": 16,
+          "baseline": 29.9059375,
+          "pooled": 29.361998320722996,
+          "personalized": 30.30058641346145
+        },
+        {
+          "participant": "CGMacros-048",
+          "meals": 21,
+          "baseline": 11.254592824790006,
+          "pooled": 10.857254936907836,
+          "personalized": 10.999455656098961
+        },
+        {
+          "participant": "CGMacros-049",
+          "meals": 17,
+          "baseline": 37.196254034929794,
+          "pooled": 36.92520448039054,
+          "personalized": 28.944041488739966
+        }
+      ]
+    },
+    {
+      "setting": "history",
+      "history_budget": 10,
+      "participants": 44,
+      "meals": 739,
+      "macro_mae": {
+        "baseline": 22.80935365401766,
+        "pooled": 22.519472529138472,
+        "personalized": 20.746585711515507
+      },
+      "personalization_improvement": 1.7728868176229633,
+      "ci95": [
+        0.6009515676482148,
+        3.092178418640927
+      ],
+      "per_person": [
+        {
+          "participant": "CGMacros-001",
+          "meals": 16,
+          "baseline": 18.888062401526767,
+          "pooled": 19.532544240276312,
+          "personalized": 8.242787477640467
+        },
+        {
+          "participant": "CGMacros-002",
+          "meals": 10,
+          "baseline": 25.20890554028375,
+          "pooled": 24.92684244249339,
+          "personalized": 24.058933597822136
+        },
+        {
+          "participant": "CGMacros-003",
+          "meals": 19,
+          "baseline": 16.824443776424772,
+          "pooled": 16.17661179856234,
+          "personalized": 19.433696409150947
+        },
+        {
+          "participant": "CGMacros-004",
+          "meals": 14,
+          "baseline": 14.386008039701347,
+          "pooled": 13.981145056492064,
+          "personalized": 14.638215652468451
+        },
+        {
+          "participant": "CGMacros-005",
+          "meals": 15,
+          "baseline": 13.081044995499978,
+          "pooled": 12.718942638199294,
+          "personalized": 13.281979096288277
+        },
+        {
+          "participant": "CGMacros-006",
+          "meals": 18,
+          "baseline": 14.553762085792762,
+          "pooled": 14.826317920219102,
+          "personalized": 12.130028543149988
+        },
+        {
+          "participant": "CGMacros-008",
+          "meals": 17,
+          "baseline": 17.119791520596884,
+          "pooled": 16.666947279487843,
+          "personalized": 15.145797272984106
+        },
+        {
+          "participant": "CGMacros-009",
+          "meals": 21,
+          "baseline": 24.31148639339928,
+          "pooled": 24.44452046353088,
+          "personalized": 8.36087158038879
+        },
+        {
+          "participant": "CGMacros-010",
+          "meals": 18,
+          "baseline": 15.284349447133835,
+          "pooled": 15.471940440141452,
+          "personalized": 13.394695212132069
+        },
+        {
+          "participant": "CGMacros-011",
+          "meals": 23,
+          "baseline": 18.610599996555155,
+          "pooled": 17.956840954971156,
+          "personalized": 18.414049466109763
+        },
+        {
+          "participant": "CGMacros-012",
+          "meals": 21,
+          "baseline": 24.356515838614573,
+          "pooled": 23.91238196050988,
+          "personalized": 24.310089157795886
+        },
+        {
+          "participant": "CGMacros-013",
+          "meals": 20,
+          "baseline": 26.446424743663897,
+          "pooled": 26.711105347807965,
+          "personalized": 15.898310182979278
+        },
+        {
+          "participant": "CGMacros-014",
+          "meals": 19,
+          "baseline": 22.625278785794734,
+          "pooled": 21.89586248207546,
+          "personalized": 22.07568733814187
+        },
+        {
+          "participant": "CGMacros-015",
+          "meals": 10,
+          "baseline": 16.382115389948808,
+          "pooled": 16.491129689209362,
+          "personalized": 13.95790225749203
+        },
+        {
+          "participant": "CGMacros-016",
+          "meals": 17,
+          "baseline": 15.106960518720134,
+          "pooled": 13.992994355099407,
+          "personalized": 13.762009753276633
+        },
+        {
+          "participant": "CGMacros-017",
+          "meals": 11,
+          "baseline": 11.029466573887882,
+          "pooled": 10.833609794192212,
+          "personalized": 10.834954134899457
+        },
+        {
+          "participant": "CGMacros-018",
+          "meals": 16,
+          "baseline": 16.75948206000903,
+          "pooled": 16.63168791405918,
+          "personalized": 16.697270181260773
+        },
+        {
+          "participant": "CGMacros-019",
+          "meals": 14,
+          "baseline": 15.106594163400837,
+          "pooled": 14.580505087877528,
+          "personalized": 15.194599659176788
+        },
+        {
+          "participant": "CGMacros-020",
+          "meals": 19,
+          "baseline": 21.103387603181123,
+          "pooled": 20.68552772751622,
+          "personalized": 19.578664491132013
+        },
+        {
+          "participant": "CGMacros-021",
+          "meals": 16,
+          "baseline": 13.271893170271348,
+          "pooled": 12.922466273217704,
+          "personalized": 13.081323642807416
+        },
+        {
+          "participant": "CGMacros-022",
+          "meals": 21,
+          "baseline": 14.494884220378575,
+          "pooled": 14.423701816450382,
+          "personalized": 11.248343348597281
+        },
+        {
+          "participant": "CGMacros-023",
+          "meals": 26,
+          "baseline": 22.4309662752283,
+          "pooled": 21.959792885906946,
+          "personalized": 20.926956125722203
+        },
+        {
+          "participant": "CGMacros-026",
+          "meals": 15,
+          "baseline": 19.488003700374435,
+          "pooled": 18.98680682425667,
+          "personalized": 18.606873102420685
+        },
+        {
+          "participant": "CGMacros-027",
+          "meals": 16,
+          "baseline": 17.08353468374189,
+          "pooled": 17.140298337001763,
+          "personalized": 16.05760561419278
+        },
+        {
+          "participant": "CGMacros-028",
+          "meals": 19,
+          "baseline": 21.84595073715881,
+          "pooled": 21.357547898016932,
+          "personalized": 22.98604222954367
+        },
+        {
+          "participant": "CGMacros-029",
+          "meals": 19,
+          "baseline": 10.110902999359498,
+          "pooled": 10.132803438368647,
+          "personalized": 13.569525011210212
+        },
+        {
+          "participant": "CGMacros-030",
+          "meals": 17,
+          "baseline": 41.44077621938596,
+          "pooled": 40.83856781453039,
+          "personalized": 39.49965065925002
+        },
+        {
+          "participant": "CGMacros-031",
+          "meals": 11,
+          "baseline": 17.38391316171197,
+          "pooled": 17.603967167225154,
+          "personalized": 15.029942379025842
+        },
+        {
+          "participant": "CGMacros-032",
+          "meals": 10,
+          "baseline": 18.891856304329398,
+          "pooled": 18.744110151103715,
+          "personalized": 10.203085296781941
+        },
+        {
+          "participant": "CGMacros-033",
+          "meals": 22,
+          "baseline": 45.91231980107436,
+          "pooled": 45.21061564512857,
+          "personalized": 44.820487936167694
+        },
+        {
+          "participant": "CGMacros-034",
+          "meals": 12,
+          "baseline": 20.823783306913374,
+          "pooled": 21.126498116506625,
+          "personalized": 11.130494164147436
+        },
+        {
+          "participant": "CGMacros-035",
+          "meals": 17,
+          "baseline": 39.2312103529767,
+          "pooled": 39.056595800843326,
+          "personalized": 35.85536476934752
+        },
+        {
+          "participant": "CGMacros-036",
+          "meals": 19,
+          "baseline": 42.98632792310684,
+          "pooled": 41.669015715902965,
+          "personalized": 40.847801794536736
+        },
+        {
+          "participant": "CGMacros-038",
+          "meals": 16,
+          "baseline": 18.87385081579612,
+          "pooled": 18.779142866869556,
+          "personalized": 20.181542553145274
+        },
+        {
+          "participant": "CGMacros-039",
+          "meals": 19,
+          "baseline": 55.245899502082565,
+          "pooled": 54.75278405454954,
+          "personalized": 52.23634575271026
+        },
+        {
+          "participant": "CGMacros-041",
+          "meals": 24,
+          "baseline": 35.48465266371875,
+          "pooled": 34.73997339852689,
+          "personalized": 32.58361833640209
+        },
+        {
+          "participant": "CGMacros-042",
+          "meals": 10,
+          "baseline": 26.50425033063332,
+          "pooled": 26.109509205908093,
+          "personalized": 28.338224669384154
+        },
+        {
+          "participant": "CGMacros-043",
+          "meals": 16,
+          "baseline": 14.490806882391354,
+          "pooled": 14.52698798318829,
+          "personalized": 19.44994779917431
+        },
+        {
+          "participant": "CGMacros-044",
+          "meals": 15,
+          "baseline": 16.469109188978592,
+          "pooled": 16.13811623965385,
+          "personalized": 17.30356090942227
+        },
+        {
+          "participant": "CGMacros-045",
+          "meals": 16,
+          "baseline": 35.73144174199153,
+          "pooled": 35.26916280180526,
+          "personalized": 34.31992370803873
+        },
+        {
+          "participant": "CGMacros-046",
+          "meals": 11,
+          "baseline": 29.873762561318,
+          "pooled": 29.78641151638906,
+          "personalized": 28.246338703631167
+        },
+        {
+          "participant": "CGMacros-047",
+          "meals": 16,
+          "baseline": 29.9059375,
+          "pooled": 29.361998320722996,
+          "personalized": 30.20519472280107
+        },
+        {
+          "participant": "CGMacros-048",
+          "meals": 21,
+          "baseline": 11.254592824790006,
+          "pooled": 10.857254936907836,
+          "personalized": 10.847314691262447
+        },
+        {
+          "participant": "CGMacros-049",
+          "meals": 17,
+          "baseline": 37.196254034929794,
+          "pooled": 36.92520448039054,
+          "personalized": 25.863721922669438
+        }
+      ]
+    }
+  ],
+  "local_output_sha256": {
+    "audit-events.json": "c184f46ee53f56b20c25ad240d9c52faa88a631deda2ee159a86238b861e1275",
+    "eligible-meals.json": "00fade28a3748d78ef5ef97667248e9ddd4a8806369c7c208abeef65bc7a78d7",
+    "predictions.json": "5571c0b2b209e8bb80523189da6e41dd72aea2d03db8ba7f5467118905a918c5",
+    "splits.json": "2522533a4e3b9f107b5319f2027c60daba685d4144158b298db29415a3640696"
+  }
+}

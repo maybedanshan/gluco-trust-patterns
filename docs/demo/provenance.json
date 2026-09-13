@@ -1,0 +1,11 @@
+{
+  "release": "0.1.0",
+  "source_result_sha256": {
+    "outputs/cgmacros_audit/robustness.json": "173bdf895f5deabf833730c905b6cf2d92031ea0b85d8a81ce22b2dd809d8fea",
+    "outputs/shanghai_v5/experiment/results.json": "4c40193869cd975b4f4e3423e0543c5e525b065d1f3a8b36a21415040deda83e",
+    "outputs/demo/results.json": "0650b02532e1b46b672dc04210b296d8fa71300eecdebb083217b5ea93434ca1"
+  },
+  "builder_sha256": "8c96577e6fcc9a596d59029e1a1f7767f0bfd153bb38e6f02f986e183d360717",
+  "template_sha256": "e6f1fe0a69efc4af33121f61072f4e4d623b5d25f9eb8fbd1818f52e36883d16",
+  "notes": "Only derived participant/seed summaries embedded; no glucose traces, meal events, or original timestamps."
+}

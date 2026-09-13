@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the software and separately cite source datasets and original papers."
+type: software
+title: "GlucoTrust: reproducible CGM missingness experiments"
+version: 0.1.0
+repository-code: "https://github.com/maybedanshan/gluco-trust"
+url: "https://github.com/maybedanshan/gluco-trust"
+date-released: 2026-09-13
+authors:
+  - name: GlucoTrust contributors
+license: MIT
+abstract: "A research prototype studying missingness-induced changes in time-weighted glucose reports. Source data and derived summaries retain separate licenses."

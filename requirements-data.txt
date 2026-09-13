@@ -1,0 +1,3 @@
+# Optional readers for Shanghai XLS / XLSX. Core experiments use the standard library.
+xlrd==2.0.2
+openpyxl>=3.1,<4
