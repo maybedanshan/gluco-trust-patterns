@@ -3,8 +3,8 @@ message: "Please cite the software and separately cite source datasets and origi
 type: software
 title: "GlucoTrust and GlucoPatterns: reproducible CGM missingness experiments and postprandial glucose pattern analysis"
 version: 0.1.0
-repository-code: "https://github.com/maybedanshan/gluco-trust"
-url: "https://github.com/maybedanshan/gluco-trust"
+repository-code: "https://github.com/maybedanshan/gluco-trust-patterns"
+url: "https://github.com/maybedanshan/gluco-trust-patterns"
 date-released: 2026-09-13
 authors:
   - family-names: Shan

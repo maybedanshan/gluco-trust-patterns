@@ -1,6 +1,6 @@
 # GlucoTrust project brief
 
-Repository: https://github.com/maybedanshan/gluco-trust
+Repository: https://github.com/maybedanshan/gluco-trust-patterns
 
 ## Research question
 

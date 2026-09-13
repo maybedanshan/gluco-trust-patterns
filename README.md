@@ -4,7 +4,7 @@
 
 [中文说明](README.zh-CN.md) · [Results](docs/RESULTS.md) · [Reproduction guide](docs/REPRODUCIBILITY.md) · [Data licenses](docs/DATA_LICENSES.md)
 
-Repository: [maybedanshan/gluco-trust](https://github.com/maybedanshan/gluco-trust). See the [research roadmap](docs/RESEARCH_ROADMAP.md) for planned studies and completion criteria, and the [project brief](docs/PROJECT_BRIEF.md) for an evidence-based overview.
+Repository: [maybedanshan/gluco-trust-patterns](https://github.com/maybedanshan/gluco-trust-patterns). See the [research roadmap](docs/RESEARCH_ROADMAP.md) for planned studies and completion criteria, and the [project brief](docs/PROJECT_BRIEF.md) for an evidence-based overview.
 
 **Post-v0.1 research extension:** [participant-paired comparisons and bootstrap intervals](docs/PAIRED_RESULTS.md) are now implemented locally. Run `python reproduce.py paired` after generating the CGMacros and Shanghai results. This exploratory extension was specified after examining v0.1; it is not preregistered or a published v0.2 release.
 
@@ -22,8 +22,8 @@ Development extension: [personal-history missingness experiment](docs/HISTORY_MI
 
 Python 3.10+ is required. No third-party packages or data downloads are needed:
 
-    git clone https://github.com/maybedanshan/gluco-trust.git
-    cd gluco-trust
+    git clone https://github.com/maybedanshan/gluco-trust-patterns.git
+    cd gluco-trust-patterns
     python reproduce.py demo
     python -m unittest discover -s tests -v
 
