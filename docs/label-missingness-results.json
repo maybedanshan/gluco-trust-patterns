@@ -64,7 +64,7 @@
     "data/local/cgmacros/raw/CGMacros-047.csv": "5151b1cf7890611cbe2c64187c946baaea717e3fbfe41469517d59ad54b4e806",
     "data/local/cgmacros/raw/CGMacros-048.csv": "f1544bcc1d2323f471ff7b7fc2b89b001ad1094ed4c8dd2678e5ab1bbbe4e9f5",
     "data/local/cgmacros/raw/CGMacros-049.csv": "2526a253a0775bcdc2db8934960b55981a5430fe1925c7c32701a3b802d062c7",
-    "label_missingness.py": "ee61a4310aca79eb30379050872e57301d8a54933ab71bd793735685635da2c6",
+    "label_missingness.py": "a3048e415a519622280a77547590ce30d0a67959aae059a7c603093e4b963a53",
     "docs/LABEL_MISSINGNESS_PROTOCOL.md": "38abb4e8ae7278b285cf0351158907e802ba4542484ec9a4a625588abde937ff",
     "glucotrust.py": "23b0f2e0a91c727af96211836ab5f865f9c99d30960a83a25435ec10df5d53fd",
     "cgmacros.py": "816a0ba675c73450d731b157e34b3633963a940067d7b76ccd89aa63cfe662c0",
@@ -23843,7 +23843,9 @@
       "mode": "night",
       "arm": "input_only",
       "n": 44,
-      "status": "incomplete"
+      "status": "incomplete",
+      "infeasible_runs": 10,
+      "infeasible_people": 1
     },
     {
       "post_threshold": 0.5,
@@ -23851,7 +23853,9 @@
       "mode": "night",
       "arm": "joint",
       "n": 44,
-      "status": "incomplete"
+      "status": "incomplete",
+      "infeasible_runs": 10,
+      "infeasible_people": 1
     },
     {
       "post_threshold": 0.5,
@@ -23859,7 +23863,9 @@
       "mode": "night",
       "arm": "label_only",
       "n": 44,
-      "status": "incomplete"
+      "status": "incomplete",
+      "infeasible_runs": 10,
+      "infeasible_people": 1
     },
     {
       "post_threshold": 0.5,
@@ -50003,7 +50009,9 @@
       "mode": "night",
       "arm": "input_only",
       "n": 44,
-      "status": "incomplete"
+      "status": "incomplete",
+      "infeasible_runs": 10,
+      "infeasible_people": 1
     },
     {
       "post_threshold": 0.7,
@@ -50011,7 +50019,9 @@
       "mode": "night",
       "arm": "joint",
       "n": 44,
-      "status": "incomplete"
+      "status": "incomplete",
+      "infeasible_runs": 10,
+      "infeasible_people": 1
     },
     {
       "post_threshold": 0.7,
@@ -50019,7 +50029,9 @@
       "mode": "night",
       "arm": "label_only",
       "n": 44,
-      "status": "incomplete"
+      "status": "incomplete",
+      "infeasible_runs": 10,
+      "infeasible_people": 1
     },
     {
       "post_threshold": 0.7,
@@ -76163,7 +76175,9 @@
       "mode": "night",
       "arm": "input_only",
       "n": 44,
-      "status": "incomplete"
+      "status": "incomplete",
+      "infeasible_runs": 10,
+      "infeasible_people": 1
     },
     {
       "post_threshold": 0.9,
@@ -76171,7 +76185,9 @@
       "mode": "night",
       "arm": "joint",
       "n": 44,
-      "status": "incomplete"
+      "status": "incomplete",
+      "infeasible_runs": 10,
+      "infeasible_people": 1
     },
     {
       "post_threshold": 0.9,
@@ -76179,7 +76195,9 @@
       "mode": "night",
       "arm": "label_only",
       "n": 44,
-      "status": "incomplete"
+      "status": "incomplete",
+      "infeasible_runs": 10,
+      "infeasible_people": 1
     },
     {
       "post_threshold": 0.9,

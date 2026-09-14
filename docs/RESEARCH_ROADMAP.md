@@ -1,5 +1,7 @@
 # Research roadmap
 
+Post-v0.2 status: [historical label missingness](LABEL_MISSINGNESS_RESULTS.md) is implemented with matched input-only, label-only and joint arms plus 50/70/90% coverage sensitivity. It is now included in the [development explorer](demo/research.html). The earlier planned-label statements below describe the sequence leading up to this extension; external meal validation and native-sample prospective evaluation remain open.
+
 This roadmap records planned work, not completed results. The project serves both an application portfolio and sustained, reproducible research. Version 0.1 findings remain descriptive.
 
 ## v0.1: reproducible reporting experiments — implemented locally

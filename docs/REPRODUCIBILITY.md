@@ -1,5 +1,9 @@
 # Reproducing GlucoTrust + GlucoPatterns v0.2
 
+## Additional label-missingness study
+
+After `patterns` and `compare`, run `python reproduce.py labels`. This is an additional post-v0.2 experiment; `full` and the frozen v0.2 ZIP are unchanged. It extends the masking timeline through the final historical outcome window, so direct mask equality with the input-only studies is not claimed. The primary postmeal coverage threshold is 70%; 50% and 90% are prespecified sensitivity settings. Event-level label errors remain local under `outputs/label_missingness/`.
+
 ## Selected-model joint experiment and explorer
 
 Run `patterns`, `history`, and `compare` first, then `python reproduce.py selected-history`. This verifies upstream result/code hashes, reuses selected penalties and verifies exact v1 mask hashes. `python reproduce.py dashboard` also generates `docs/demo/research.html` from aggregate results. The two diagnostic cost terms sum to total cost under the declared ordering, not a unique causal decomposition. These development additions do not overwrite the original v0.1 ZIP.

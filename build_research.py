@@ -11,6 +11,12 @@ def main():
     model, history = [json.loads(p.read_text()) for p in paths]
     payload = {'models': [{k:v for k,v in s.items() if k!='per_person'} for s in model['evaluations']],
                'history': [{k:v for k,v in s.items() if k!='per_person'} for s in history['summaries']]}
+    labels_path=ROOT/'docs/label-missingness-results.json'
+    if labels_path.exists():
+        labels=json.loads(labels_path.read_text())
+        payload['labels']=[{k:v for k,v in s.items() if k!='per_person'} for s in labels['summaries']]
+        payload['label_counts']={k:labels[k] for k in ['people','test_meals','mask_configurations','arm_threshold_evaluations']}
+        paths.append(labels_path)
     template = ROOT/'research_dashboard.html'
     out = ROOT/'docs/demo'
     out.mkdir(parents=True,exist_ok=True)

@@ -40,9 +40,9 @@ Primary label coverage: at least 15/30 premeal minutes and 84/120 postmeal minut
 | 20% | block | input_only | 8.17 | 19.306 | 2.214 [1.061, 3.503] | 0.231 [0.092, 0.381] |
 | 20% | block | joint | 7.97 | 19.326 | 2.194 [1.055, 3.473] | 0.251 [0.102, 0.413] |
 | 20% | block | label_only | 7.97 | 19.327 | 2.194 [1.055, 3.473] | 0.251 [0.103, 0.413] |
-| 20% | night | input_only | Incomplete | — | — | — |
-| 20% | night | joint | Incomplete | — | — | — |
-| 20% | night | label_only | Incomplete | — | — | — |
+| 20% | night | input_only | Infeasible: 1 people / 10 runs | — | — | — |
+| 20% | night | joint | Infeasible: 1 people / 10 runs | — | — | — |
+| 20% | night | label_only | Infeasible: 1 people / 10 runs | — | — | — |
 | 20% | random | input_only | 10.00 | 19.072 | 2.448 [1.232, 3.814] | -0.003 [-0.007, 0.001] |
 | 20% | random | joint | 9.96 | 19.085 | 2.436 [1.217, 3.799] | 0.009 [-0.004, 0.023] |
 | 20% | random | label_only | 9.96 | 19.087 | 2.433 [1.215, 3.794] | 0.012 [-0.001, 0.026] |

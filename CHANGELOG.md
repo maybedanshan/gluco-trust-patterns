@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased — historical-label study
+
+Add matched input-only, label-only and joint historical degradation with 70% primary postmeal coverage and 50/90% sensitivity. Record conditional label errors, history availability and infeasible night budgets. Section 3 of the development explorer presents these results. The v0.2 ZIP and its full workflow remain unchanged.
+
 ## 0.2.0 — 2026-09-14
 
 Consolidates the research additions below into one versioned source snapshot. Adds a full workflow, pinned Python 3.12 dependencies, independent-directory validation and deterministic packaging. The v0.1 archive remains unchanged.

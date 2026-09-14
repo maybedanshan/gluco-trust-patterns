@@ -17,3 +17,9 @@ The release ZIP uses an explicit file allowlist and a complete per-file SHA-256 
 ## Limits of validation
 
 Local numerical reproducibility and code tests do not establish clinical validity or prospective prediction performance. The GitHub Actions matrix is configured but no hosted run or public GitHub release is claimed by this record. The full environment was tested on Windows/Python 3.12; Python 3.10 remains a source-syntax and configured core-CI target, not an independently verified full-research runtime.
+
+## Post-v0.2 development: historical label missingness
+
+Validated locally on 2026-09-14. Two consecutive label-study runs produced byte-identical result JSON. The expanded suite passed all 53 tests. This extension is run with `python reproduce.py labels`, followed by `python build_research.py`; it is not included in the frozen v0.2 ZIP or its `full` workflow.
+
+Browser checks covered the three degradation arms, the 90% coverage sensitivity case, zero missingness, and infeasible 20% night missingness. The night configuration explicitly reports one affected participant (10 runs per arm) and suppresses aggregate comparisons. Zero missingness gives identical MAE (19.075 mg/dL) for all three arms. The page showed no captured console errors; narrow-screen tables provide horizontal scrolling. These checks validate the implementation and presentation, not prospective clinical performance.

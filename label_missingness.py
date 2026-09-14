@@ -125,7 +125,9 @@ def main():
     for (threshold,ratio,mode,arm),rs in sorted(grouped.items()):
         base_summary={'post_threshold':threshold,'ratio':ratio,'mode':mode,'arm':arm,'n':len(ids)}
         if any(r['status']!='ok' for r in rs):
-            summaries.append({**base_summary,'status':'incomplete'});continue
+            summaries.append({**base_summary,'status':'incomplete',
+                'infeasible_runs':sum(r['status']!='ok' for r in rs),
+                'infeasible_people':len({r['participant'] for r in rs if r['status']!='ok'})});continue
         people=[]
         numeric=['personalized_mae','pooled_mae','clean_mae','cost','benefit','usable_history','premeal_missing_fraction','postmeal_missing_fraction','actual_timeline_fraction','joint_minus_input','joint_minus_label']
         for pid in ids:
@@ -163,7 +165,7 @@ def main():
     def effect(s,k):return f'{s[k]:.3f} [{s["ci95"][k][0]:.3f}, {s["ci95"][k][1]:.3f}]'
     for s in summaries:
         if s['post_threshold']!=.7:continue
-        if s['status']!='complete':lines.append(f'| {s["ratio"]:.0%} | {s["mode"]} | {s["arm"]} | Incomplete | — | — | — |');continue
+        if s['status']!='complete':lines.append(f'| {s["ratio"]:.0%} | {s["mode"]} | {s["arm"]} | Infeasible: {s["infeasible_people"]} people / {s["infeasible_runs"]} runs | — | — | — |');continue
         lines.append(f'| {s["ratio"]:.0%} | {s["mode"]} | {s["arm"]} | {s["usable_history"]:.2f} | {s["personalized_mae"]:.3f} | {effect(s,"benefit")} | {effect(s,"cost")} |')
     lines+=['','## Label errors and threshold sensitivity at 20% timeline missingness','',
         'Label errors are conditional on labels passing coverage; stricter selection may lower apparent label error while losing useful history. Counts include repeated masks/seeds, not unique meals. Label diagnostics are identical across arms; only one copy is shown. Complete per-person summaries and other budgets are in the JSON.','',
