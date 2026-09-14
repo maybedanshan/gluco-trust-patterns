@@ -20,6 +20,10 @@ GlucoTrust measures signed bias and absolute error in time-weighted mean glucose
 
 ## Try the offline demo
 
+The optional `webapp_server.py` is a loopback-only local interaction layer: it binds to `127.0.0.1`, has no telemetry or persistent request/result storage, and does not listen on external interfaces. The scientific pipeline remains independently reproducible through the CLI.
+
+Additional post-v0.2 study: [historical label missingness](docs/LABEL_MISSINGNESS_RESULTS.md), under its [protocol](docs/LABEL_MISSINGNESS_PROTOCOL.md). Run `python reproduce.py labels` after `patterns` and `compare`, then `python build_research.py` to update section 3 of the [interactive explorer](docs/demo/research.html). It separates input-only, label-only and joint degradation, with 50/70/90% postmeal coverage sensitivity and explicit infeasible-budget warnings; it is not included in the frozen v0.2 ZIP.
+
 Model comparison: [inner-validated ridge and history-only baseline](docs/MODEL_COMPARISON_RESULTS.md), under a [separate protocol](docs/MODEL_COMPARISON_PROTOCOL.md). Run `python reproduce.py compare` after the initial meal benchmark. Original fixed-parameter experiments remain available and must not be mixed with selected-model results.
 
 Joint experiment: [personal-history missingness experiment](docs/HISTORY_MISSINGNESS_RESULTS.md) connects the two modules. After `python reproduce.py patterns`, run `python reproduce.py history`. It masks early historical CGM inputs while keeping labels and later test meals fixed; it does not simulate simultaneous loss of historical labels.
@@ -130,3 +134,7 @@ The original v0.1 release has no prediction model. The current development tree 
 **Jiacheng Shan (单嘉诚)** — [@maybedanshan](https://github.com/maybedanshan)
 
 Undergraduate research project in data science and big data. Academic demonstration only; not for clinical diagnosis, treatment decisions, or dietary/medication advice.
+
+## Local frontend + backend prototype
+
+Run `python webapp_server.py` and open http://127.0.0.1:8766. The web interface calls Python APIs for synthetic missingness experiments and existing aggregate research results. See [architecture and API](docs/WEB_APP.md). This development prototype is separate from the frozen v0.2 archive.
