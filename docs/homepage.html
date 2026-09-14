@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>gluco-trust-patterns · 血糖数据可信度与个体化模式研究</title>
+<style>
+:root{--ink:#0d3b40;--ink-soft:#41636a;--paper:#f7f4ec;--card:#fffdf8;--line:#d8d2c2;--accent:#c45b32;--teal:#087782;--good:#087e8b;--bad:#b34a24}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 system-ui,"Segoe UI","Microsoft YaHei",sans-serif}
+.display{font-family:Georgia,"Times New Roman","STSong","SimSun",serif}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+/* ---- top bar ---- */
+.top{position:sticky;top:0;z-index:9;background:rgba(247,244,236,.94);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:26px;height:58px}
+.top b{font-size:15px;letter-spacing:.4px}
+.top nav{display:flex;gap:20px;font-size:14px;margin-left:auto}
+.gh{border:1px solid var(--ink);border-radius:999px;padding:4px 14px;font-size:13px;color:var(--ink)}
+/* ---- hero ---- */
+.hero{padding:84px 0 60px;border-bottom:1px solid var(--line)}
+.kicker{font-size:13px;font-weight:700;letter-spacing:2.5px;color:var(--accent);text-transform:uppercase}
+h1{font-size:clamp(38px,6.4vw,72px);line-height:1.12;margin:18px 0 20px;max-width:820px}
+h1 em{font-style:normal;color:var(--accent)}
+.lede{font-size:18px;max-width:680px;color:var(--ink-soft);margin:0 0 34px}
+.stats{display:flex;flex-wrap:wrap;gap:14px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 24px;min-width:170px}
+.stat .num{font-family:Georgia,"STSong","SimSun",serif;font-size:34px;line-height:1.1}
+.stat .lbl{font-size:13px;color:var(--ink-soft);margin-top:4px}
+/* ---- sections ---- */
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+.secno{font-family:Georgia,"STSong",serif;font-size:15px;color:var(--accent);letter-spacing:2px}
+h2{font-family:Georgia,"STSong","SimSun",serif;font-size:clamp(26px,3.6vw,38px);line-height:1.25;margin:10px 0 14px}
+.sub{max-width:720px;color:var(--ink-soft);margin:0 0 30px}
+.findings{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card .verdict{font-family:Georgia,"STSong",serif;font-size:30px;line-height:1.2;margin:2px 0 12px}
+.card .verdict span{color:var(--accent)}
+.card p{font-size:14px;color:var(--ink-soft);margin:0}
+/* bars */
+.bar-row{display:grid;grid-template-columns:150px 1fr 62px;align-items:center;gap:10px;margin:8px 0;font-size:13px}
+.bar-row .name{color:var(--ink-soft);text-align:right}
+.track{background:#eee9dc;border-radius:5px;height:16px;overflow:hidden}
+.fill{height:100%;border-radius:5px}
+.fill.bad{background:var(--bad)}
+.fill.good{background:var(--good)}
+.bar-row .val{font-variant-numeric:tabular-nums;font-weight:700}
+.src{font-size:12px;color:#8a9a96;margin-top:14px}
+/* two-col module map */
+.mods{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.mod{border-left:4px solid var(--teal);background:var(--card);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0 16px 16px 0;padding:24px}
+.mod h3{margin:0 0 8px;font-size:18px}
+.mod p{font-size:14px;color:var(--ink-soft);margin:0 0 10px}
+.mod code{background:#eee9dc;border-radius:5px;padding:2px 7px;font-size:13px}
+/* data & repro */
+.dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:0 0 26px;padding:0;list-style:none}
+.dl li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:14px}
+.dl b{display:block;font-size:15px;margin-bottom:3px}
+pre{background:var(--ink);color:#dfe9e4;border-radius:12px;padding:18px 22px;font-size:13.5px;line-height:1.9;overflow:auto;margin:0 0 10px}
+pre .c{color:#7fa8a0}
+/* limits */
+.limits{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.limits div{border-top:2px solid var(--accent);background:var(--card);border-radius:0 0 12px 12px;padding:16px 18px;font-size:14px;color:var(--ink-soft)}
+.limits b{display:block;color:var(--ink);margin-bottom:4px}
+/* footer */
+footer{padding:44px 0 60px;font-size:14px;color:var(--ink-soft)}
+footer .sign{font-family:Georgia,"STSong",serif;font-size:22px;color:var(--ink);margin-bottom:10px}
+footer .dis{border-left:4px solid var(--accent);padding-left:14px;margin:18px 0}
+@media(max-width:640px){.top nav{display:none}.hero{padding:56px 0 44px}}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+<b>gluco-trust-patterns</b>
+<nav>
+<a href="#findings">核心发现</a>
+<a href="#modules">研究模块</a>
+<a href="#data">数据与复现</a>
+<a href="#limits">边界声明</a>
+<a class="gh" href="https://github.com/maybedanshan/gluco-trust-patterns" target="_blank" rel="noopener">GitHub ↗</a>
+</nav>
+</div></div>
+
+<header class="hero"><div class="wrap">
+<div class="kicker">GlucoTrust × GlucoPatterns · 回顾性 CGM 研究</div>
+<h1 class="display">血糖报告可信吗？<br>缺失的读数，<em>正在悄悄改写答案</em>。</h1>
+<p class="lede">连续血糖监测（CGM）数据不可避免地存在缺失。本项目系统测量：不同缺失方式如何扭曲"平均血糖、范围内时间（TIR）"等报告指标，并进一步研究个人历史数据在缺失下还能保留多少个体化价值。</p>
+<div class="stats">
+<div class="stat"><div class="num">64,440</div><div class="lbl">次真实数据实验</div></div>
+<div class="stat"><div class="num">144</div><div class="lbl">名参与者（CGMacros + Shanghai）</div></div>
+<div class="stat"><div class="num">3</div><div class="lbl">个公开数据集交叉验证</div></div>
+<div class="stat"><div class="num">0</div><div class="lbl">数据上传 · 纯离线架构</div></div>
+</div>
+</div></header>
+
+<main>
+<section id="findings"><div class="wrap">
+<div class="secno">01 — 核心发现</div>
+<h2>三个数字，讲完整个项目</h2>
+<p class="sub">以下全部数值来自本地可复现实验，括号内为参与者级 bootstrap 95% 置信区间。TIR 误差单位为百分点（pp），血糖误差单位为 mg/dL。</p>
+
+<div class="findings">
+<div class="card">
+<h3>发现一 · 连续缺失的危害约为随机的十倍</h3>
+<div class="verdict display">≈ <span>10×</span></div>
+<p>同样缺失 20%，整段连续丢失比随机删点对 TIR 的扭曲大一个数量级，且在两套独立人群上复现：</p>
+<div style="margin-top:14px">
+<div class="bar-row"><span class="name">CGMacros · 随机</span><div class="track"><div class="fill good" style="width:10%"></div></div><span class="val">0.26 pp</span></div>
+<div class="bar-row"><span class="name">CGMacros · 连续</span><div class="track"><div class="fill bad" style="width:100%"></div></div><span class="val">2.50 pp</span></div>
+<div class="bar-row"><span class="name">Shanghai · 随机</span><div class="track"><div class="fill good" style="width:33%"></div></div><span class="val">1.55 pp</span></div>
+<div class="bar-row"><span class="name">Shanghai · 连续</span><div class="track"><div class="fill bad" style="width:100%"></div></div><span class="val">4.72 pp</span></div>
+</div>
+<p class="src">20% 请求缺失预算下的 TIR 绝对误差（Dexcom 设备）。见 docs/RESULTS.md。</p>
+</div>
+
+<div class="card">
+<h3>发现二 · 个人历史越多，个体化越强</h3>
+<div class="verdict display">+<span>1.77</span> mg/dL</div>
+<p>10 餐早期历史带来的 MAE 改善（相对合并模型），且收益随历史预算单调增长、区间已脱离零点：</p>
+<div style="margin-top:14px">
+<div class="bar-row"><span class="name">3 餐历史</span><div class="track"><div class="fill good" style="width:12%"></div></div><span class="val">0.21</span></div>
+<div class="bar-row"><span class="name">5 餐历史</span><div class="track"><div class="fill good" style="width:75%"></div></div><span class="val">1.33</span></div>
+<div class="bar-row"><span class="name">10 餐历史</span><div class="track"><div class="fill good" style="width:100%"></div></div><span class="val">1.77</span></div>
+</div>
+<p class="src">44 人、739 个固定后期餐次；10 餐组 95% CI [0.60, 3.09]。见 docs/GLUCOPATTERNS_RESULTS.md。</p>
+</div>
+
+<div class="card">
+<h3>发现三 · 缺失吃掉收益，但没吃光</h3>
+<div class="verdict display"><span>+2.45 → +2.25</span></div>
+<p>历史输入被损坏后，个体化收益随之缩水——连续缺失 20% 时收益从 2.45 降至 2.25 mg/dL，仍稳定为正；而随机缺失几乎不造成损失：</p>
+<div style="margin-top:14px">
+<div class="bar-row"><span class="name">干净历史</span><div class="track"><div class="fill good" style="width:100%"></div></div><span class="val">+2.45</span></div>
+<div class="bar-row"><span class="name">随机 20%</span><div class="track"><div class="fill good" style="width:100%"></div></div><span class="val">+2.45</span></div>
+<div class="bar-row"><span class="name">夜间 20%</span><div class="track"><div class="fill good" style="width:95%"></div></div><span class="val">+2.33</span></div>
+<div class="bar-row"><span class="name">连续 20%</span><div class="track"><div class="fill good" style="width:92%"></div></div><span class="val">+2.25</span></div>
+</div>
+<p class="src">剩余收益（配对差值，mg/dL），5,280 个模拟键全量复用。见 docs/SELECTED_HISTORY_RESULTS.md。</p>
+</div>
+</div>
+</div></section>
+
+<section id="modules"><div class="wrap">
+<div class="secno">02 — 研究模块</div>
+<h2>一套数据，三层递进</h2>
+<p class="sub">GlucoTrust 回答"报告可信吗"，GlucoPatterns 回答"个体化值多少"，联合实验把两者接起来：缺失如何侵蚀个体化收益。</p>
+<div class="mods">
+<div class="mod"><h3>GlucoTrust · 缺失 → 指标失真</h3><p>随机 / 连续 / 夜间三种缺失模式，测量时间加权平均血糖与 TIR 的有符号偏差与绝对误差；双 CGM（Dexcom + Libre）同窗对照，24/48/72 小时窗口敏感性分析。</p><p>实验总量 64,440 次，另含 PhysioCGM 原始导出的 317 个候选时间缺口审查。</p></div>
+<div class="mod"><h3>GlucoPatterns · 餐后个体化预测</h3><p>1,706 条餐次记录 → 1,179 个合格餐；留出参与者外层评估，岭回归 + 收缩式早期历史偏移，比较训练集均值、合并模型与个体化模型。</p><p>严格按参与者划分数据、预处理仅拟合训练集。</p></div>
+<div class="mod"><h3>联合实验 · 缺失 × 个体化</h3><p>固定预测目标与测试集，只改变早期历史的缺失比例与模式；将损失分解为"可用性成本 + 保留特征成本"，明确归因到机制而非黑箱。</p><p>见 <a href="demo/research.zh.html">交互式结果看板（中文）</a>。</p></div>
+</div>
+</div></section>
+
+<section id="data"><div class="wrap">
+<div class="secno">03 — 数据与复现</div>
+<h2>全部来自公开数据，一键复现</h2>
+<p class="sub">不采集任何个人数据；所有数据集来源、版本、许可逐项登记。</p>
+<ul class="dl">
+<li><b>CGMacros v1.0.0</b>45 人 · 双 CGM · 10 天<br><span style="color:#8a9a96">PhysioNet · DOI 10.13026/3z8q-x658</span></li>
+<li><b>ShanghaiT2DM v5</b>100 人 · 15 分钟采样<br><span style="color:#8a9a96">figshare · DOI 10.6084/m9.figshare.20425518</span></li>
+<li><b>PhysioCGM v1</b>10 人原始导出 · 真实缺测<br><span style="color:#8a9a96">figshare · DOI 10.6084/m9.figshare.28136294</span></li>
+<li><b>隐私即设计</b>纯离线 · 无服务器 · 无上传<br><span style="color:#8a9a96">使用者数据仅存本机</span></li>
+</ul>
+<pre><span class="c"># 克隆并复现全部真实数据实验（数据需显式 --download，遵守源许可）</span>
+git clone https://github.com/maybedanshan/gluco-trust-patterns.git
+cd gluco-trust-patterns
+python -m pip install -r requirements-data.txt
+python reproduce.py all --download
+python reproduce.py release   <span class="c"># 生成报告、看板与确定性源码归档</span></pre>
+<p style="font-size:14px;color:var(--ink-soft)">无第三方核心依赖（上海 Excel 读取为可选依赖）；每个输出附带输入与代码哈希。<a href="REPRODUCIBILITY.md">复现指南 →</a></p>
+</div></section>
+
+<section id="limits"><div class="wrap">
+<div class="secno">04 — 边界声明</div>
+<h2>我们刻意不做的事</h2>
+<p class="sub">诚实标注边界与"给出漂亮结论"同样重要。</p>
+<div class="limits">
+<div><b>不用于临床</b>研究原型，不用于诊断、治疗决策或饮食用药建议。</div>
+<div><b>不解释真实掉线</b>CGMacros 发布曲线含插值，实验测的是"发布后额外缺失"，不是原始传感器故障机制。</div>
+<div><b>不做因果归因</b>缺失模式对比为描述性发现；分解仅用于诊断，不构成因果声明。</div>
+<div><b>不做显著性滥用</b>种子不是独立样本；按参与者 bootstrap，不做池化显著性推断。</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="sign display">单嘉诚 Jiacheng Shan</div>
+数据科学与大数据方向本科研究项目 · <a href="https://github.com/maybedanshan/gluco-trust-patterns" target="_blank" rel="noopener">github.com/maybedanshan/gluco-trust-patterns</a>
+<div class="dis">本页面为学术演示。代码 MIT 许可；CGMacros 衍生结果 CC BY-NC-SA 4.0；ShanghaiT2DM 衍生结果 CC BY 4.0；数据许可详见 <a href="DATA_LICENSES.md">数据署名</a>。</div>
+© 2026 · 页面本身零依赖、零上报，可完全离线打开
+</div></footer>
+
+</body>
+</html>
