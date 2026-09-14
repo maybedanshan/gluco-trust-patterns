@@ -1,12 +1,14 @@
 # GlucoTrust
 
-**v0.1.0 — reproducible experiments on missing CGM data and glucose-report reliability.**
+**v0.2.0 — reproducible missingness, meal-response prediction and personal-history reliability experiments.**
 
 [中文说明](README.zh-CN.md) · [Results](docs/RESULTS.md) · [Reproduction guide](docs/REPRODUCIBILITY.md) · [Data licenses](docs/DATA_LICENSES.md)
 
+**v0.2 research results:** [interactive prediction/history explorer](docs/demo/research.html) · [selected-model missingness report](docs/SELECTED_HISTORY_RESULTS.md). The same 5,280 simulation masks and fixed later meals are reused for selected and original models. An ordered diagnostic separates loss of usable history from degradation of retained features; it is not causal attribution. The downloadable source snapshot is version 0.2.0; public hosting status is described in the release notes.
+
 Repository: [maybedanshan/gluco-trust-patterns](https://github.com/maybedanshan/gluco-trust-patterns). See the [research roadmap](docs/RESEARCH_ROADMAP.md) for planned studies and completion criteria, and the [project brief](docs/PROJECT_BRIEF.md) for an evidence-based overview.
 
-**Post-v0.1 research extension:** [participant-paired comparisons and bootstrap intervals](docs/PAIRED_RESULTS.md) are now implemented locally. Run `python reproduce.py paired` after generating the CGMacros and Shanghai results. This exploratory extension was specified after examining v0.1; it is not preregistered or a published v0.2 release.
+**Post-v0.1 research extension:** [participant-paired comparisons and bootstrap intervals](docs/PAIRED_RESULTS.md) are now implemented locally. Run `python reproduce.py paired` after generating the CGMacros and Shanghai results. This exploratory extension was specified after examining v0.1; it is not preregistered.
 
 **GlucoPatterns initial benchmark:** [protocol](docs/GLUCOPATTERNS_PROTOCOL.md) and [meal audit / model results](docs/GLUCOPATTERNS_RESULTS.md). Install `requirements-patterns.txt`, then run `python reproduce.py patterns`. The benchmark separates held-out participants from early-history adaptation, with identical later test meals across history budgets. It is retrospective on processed curves, not validated real-time forecasting.
 
@@ -18,7 +20,9 @@ GlucoTrust measures signed bias and absolute error in time-weighted mean glucose
 
 ## Try the offline demo
 
-Development extension: [personal-history missingness experiment](docs/HISTORY_MISSINGNESS_RESULTS.md) connects the two modules. After `python reproduce.py patterns`, run `python reproduce.py history`. It masks early historical CGM inputs while keeping labels and later test meals fixed; it does not simulate simultaneous loss of historical labels.
+Model comparison: [inner-validated ridge and history-only baseline](docs/MODEL_COMPARISON_RESULTS.md), under a [separate protocol](docs/MODEL_COMPARISON_PROTOCOL.md). Run `python reproduce.py compare` after the initial meal benchmark. Original fixed-parameter experiments remain available and must not be mixed with selected-model results.
+
+Joint experiment: [personal-history missingness experiment](docs/HISTORY_MISSINGNESS_RESULTS.md) connects the two modules. After `python reproduce.py patterns`, run `python reproduce.py history`. It masks early historical CGM inputs while keeping labels and later test meals fixed; it does not simulate simultaneous loss of historical labels.
 
 Python 3.10+ is required. No third-party packages or data downloads are needed:
 
@@ -32,6 +36,24 @@ Open outputs/demo/explorer/index.html. For the bundled real-data summary explore
 Select dataset/device, observation window, metric and missing fraction. Charts show mean absolute error, participant signed bias and seed variation; hover for exact values or export the table. TIR errors are **percentage points (pp)**, not relative percentages.
 
 ## Reproduce real-data experiments
+
+Full versioned workflow (Python 3.12):
+
+    python -m pip install -r requirements-repro.txt
+    python reproduce.py full
+
+Use `python reproduce.py full --download` if source datasets are not present. `all` retains its original GlucoTrust-only scope; `full` includes every research module, reports and both explorers. Raw data stay local.
+
+For the complete prediction research sequence after CGMacros preparation:
+
+    python -m pip install -r requirements-patterns.txt
+    python reproduce.py patterns
+    python reproduce.py history
+    python reproduce.py compare
+    python reproduce.py selected-history
+    python reproduce.py dashboard
+
+The last command updates both offline explorers. Historical labels remain complete in these missingness studies. See [the selected-model protocol](docs/SELECTED_HISTORY_PROTOCOL.md) for what the diagnostic can and cannot establish.
 
 Use an isolated Python environment. Optional Excel readers are needed for Shanghai:
 

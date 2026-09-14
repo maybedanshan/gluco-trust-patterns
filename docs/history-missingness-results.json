@@ -36,7 +36,7 @@
     "docs/HISTORY_MISSINGNESS_PROTOCOL.md": "22e18328d939f7898270f5e4dfdcc919b481aa62498f95cc60c8a6b87466b6f4",
     "history_missingness.py": "f2dc01ef6834737fc2cd38de6761a45d756a01c6d5b639fd0df5ff0eee6cfea8",
     "glucopatterns.py": "533e5c438b06c73470e91fbd18f41c09dc4b5f57ebba6394658c9b2965372ca6",
-    "glucotrust.py": "5015cd3a0661056a717dcb4533f573ac92b2bd0f6a2610d40c805cf5697e8178",
+    "glucotrust.py": "23b0f2e0a91c727af96211836ab5f865f9c99d30960a83a25435ec10df5d53fd",
     "cgmacros.py": "816a0ba675c73450d731b157e34b3633963a940067d7b76ccd89aa63cfe662c0",
     "paired_analysis.py": "94f0443f903479ea95e84c137dc6f1a37f54ec5aae68df97c0f804eb56573453"
   },

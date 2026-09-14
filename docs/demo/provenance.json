@@ -1,11 +1,11 @@
 {
-  "release": "0.1.0",
+  "release": "0.2.0",
   "source_result_sha256": {
-    "outputs/cgmacros_audit/robustness.json": "173bdf895f5deabf833730c905b6cf2d92031ea0b85d8a81ce22b2dd809d8fea",
-    "outputs/shanghai_v5/experiment/results.json": "4c40193869cd975b4f4e3423e0543c5e525b065d1f3a8b36a21415040deda83e",
-    "outputs/demo/results.json": "0650b02532e1b46b672dc04210b296d8fa71300eecdebb083217b5ea93434ca1"
+    "outputs/cgmacros_audit/robustness.json": "5dd498d6d0552644ebd92233b3cdb90179455fa0277016637bf79ee83f35c049",
+    "outputs/shanghai_v5/experiment/results.json": "49e4771b66b162b61f75c49c49939cf9b10f39175f67d4deb569def0cad32999",
+    "outputs/demo/results.json": "455ee96c07e824a8d2c92a9db8524c9f5d851481e87eb5b2ed49e415f53c3311"
   },
-  "builder_sha256": "8c96577e6fcc9a596d59029e1a1f7767f0bfd153bb38e6f02f986e183d360717",
-  "template_sha256": "e6f1fe0a69efc4af33121f61072f4e4d623b5d25f9eb8fbd1818f52e36883d16",
+  "builder_sha256": "423c4c4ac438318b35f88fd973d27bb1a6035f80bdf22b481d89247d6ee10e68",
+  "template_sha256": "d4e382976cce9e4815b273c0c9637a735d586a0d4bb28f91bac229b2f4649f78",
   "notes": "Only derived participant/seed summaries embedded; no glucose traces, meal events, or original timestamps."
 }

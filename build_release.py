@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parent
 
 def release_files(root=ROOT):
     names=['README.md','README.zh-CN.md','LICENSE','VERSION','CITATION.cff','CHANGELOG.md','CONTRIBUTING.md',
-           '.gitignore','.gitattributes','requirements-data.txt','requirements-patterns.txt','demo.html','release_dashboard.html']
+           '.gitignore','.gitattributes','requirements-data.txt','requirements-patterns.txt','requirements-repro.txt','demo.html','release_dashboard.html']
     files=[root/name for name in names]
     files+=list(root.glob('*.py'))
     files+=list((root/'tests').glob('*.py'))
@@ -16,6 +16,8 @@ def release_files(root=ROOT):
     files+=list((root/'docs').glob('*.md'))+list((root/'docs').glob('*.json'))
     files += [root/'docs/demo/index.html',root/'docs/demo/provenance.json']
     if (root/'docs/demo/preview.png').exists(): files.append(root/'docs/demo/preview.png')
+    for relative in ['research_dashboard.html','docs/demo/research.html','docs/demo/research-provenance.json']:
+        if (root/relative).exists(): files.append(root/relative)
     for p in files:
         if not p.is_file() or p.is_symlink(): raise ValueError(f'Missing or symlinked release input: {p}')
         if not p.resolve().is_relative_to(root.resolve()): raise ValueError('File escapes source root')
@@ -24,19 +26,19 @@ def release_files(root=ROOT):
 
 def main():
     version=(ROOT/'VERSION').read_text().strip()
-    if version!='0.1.0': raise ValueError('Update release script for a new version')
-    required=['docs/RESULTS.md','docs/RELEASE.md','docs/DATA_LICENSES.md','docs/REPRODUCIBILITY.md']
+    if version!='0.2.0': raise ValueError('Update release script for a new version')
+    required=['docs/RESULTS.md','docs/RELEASE.md','docs/DATA_LICENSES.md','docs/REPRODUCIBILITY.md','docs/SELECTED_HISTORY_RESULTS.md','docs/demo/research.html']
     for name in required:
         if not (ROOT/name).exists(): raise ValueError(f'Missing release artifact {name}')
     files=release_files()
-    prefix=f'glucotrust-{version}'
+    prefix=f'gluco-trust-patterns-{version}'
     out=ROOT/'dist'
     out.mkdir(exist_ok=True)
     dest=out/f'{prefix}.zip'
     manifest=[]
     with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as archive:
         def write(name,content):
-            info=zipfile.ZipInfo(prefix+'/'+name,date_time=(2026,9,13,0,0,0))
+            info=zipfile.ZipInfo(prefix+'/'+name,date_time=(2026,9,14,0,0,0))
             info.compress_type=zipfile.ZIP_DEFLATED
             info.external_attr=0o100644<<16
             archive.writestr(info,content,compresslevel=9)

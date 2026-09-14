@@ -36,8 +36,8 @@ def main():
     physio=load('outputs/physiocgm/audit.json',hashes)
     cgm_audit=load('outputs/cgmacros/audit.json',hashes)
     cgm=robust['results']
-    lines=['# GlucoTrust v0.1 — Results and limitations','',
-        'Generated from local result JSON by build_report.py. Software version 0.1.0. This is a descriptive research report, not evidence of clinical utility or a validated device-dropout mechanism.','',
+    lines=['# GlucoTrust v0.2 — Results and limitations','',
+        'Generated from local result JSON by build_report.py. Software version 0.2.0. This is a descriptive research report, not evidence of clinical utility or a validated device-dropout mechanism.','',
         'An exploratory post-v0.1 extension now reports [participant-paired differences and bootstrap intervals](PAIRED_RESULTS.md). Its estimates and limitations are separate from the descriptive tables below.','',
         '## Research question','',
         'At a matched missing-time budget within an experiment, how do random deletions, a continuous block and night-restricted deletions change time-weighted mean glucose and time in range (TIR)?','',
@@ -82,7 +82,7 @@ def main():
         '2. Complete-window selection may favor better observed periods. Population, device and acquisition differences limit external generalization.',
         '3. No participant bootstrap, significance test or clinical decision threshold is supplied. Variation across seeds is Monte Carlo variability, not population uncertainty.',
         '4. Night restriction uses released clock hours, not verified real-world disconnect causes. Date shifts do not recover calendar context.',
-        '5. No meal-response prediction is part of v0.1. Future GlucoPatterns work needs predefined outcomes, person/time splits and leakage checks.','',
+        '5. Meal prediction and joint missingness analyses are available in the companion reports linked from README.md. They remain retrospective, protocol-defined exploratory analyses.','',
         '## Reproduction and attribution','',
         'Run `python reproduce.py all` with the licensed local data, then `python reproduce.py release`. See [reproduction guide](REPRODUCIBILITY.md) and [data attribution](DATA_LICENSES.md).',
         'Sources: [CGMacros data](https://doi.org/10.13026/3z8q-x658) and [paper](https://doi.org/10.1038/s41597-025-05851-7); [Shanghai v5](https://doi.org/10.6084/m9.figshare.20425518.v5) and [paper](https://doi.org/10.1038/s41597-023-01940-7); [PhysioCGM v1](https://doi.org/10.6084/m9.figshare.28136294.v1) and [paper](https://doi.org/10.1038/s41597-025-06090-6).',
@@ -90,7 +90,7 @@ def main():
         '## Source result hashes','', '| Local result artifact | SHA256 |','|---|---|']
     lines += [f'|{p}|{digest}|' for p,digest in sorted(hashes.items())]
     (ROOT/'docs/RESULTS.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
-    (ROOT/'docs/result-provenance.json').write_text(json.dumps({'version':'0.1.0','python':platform.python_version(),
+    (ROOT/'docs/result-provenance.json').write_text(json.dumps({'version':'0.2.0','python':platform.python_version(),
         'result_sha256':hashes,'builder_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},indent=2),encoding='utf-8')
     print('Generated docs/RESULTS.md from verified local outputs')
 

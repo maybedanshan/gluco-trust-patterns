@@ -1,0 +1,1527 @@
+{
+  "grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "numpy_version": "2.3.5",
+  "sha256": {
+    "outputs/glucopatterns/eligible-meals.json": "00fade28a3748d78ef5ef97667248e9ddd4a8806369c7c208abeef65bc7a78d7",
+    "outputs/glucopatterns/splits.json": "2522533a4e3b9f107b5319f2027c60daba685d4144158b298db29415a3640696",
+    "outputs/glucopatterns/predictions.json": "5571c0b2b209e8bb80523189da6e41dd72aea2d03db8ba7f5467118905a918c5",
+    "docs/MODEL_COMPARISON_PROTOCOL.md": "f0d93b808345c17d98758eaa6c6f4231c455c3283f44d399a4dd28077fa9965b",
+    "model_comparison.py": "43670cbae021ab8a884c0c1d3c095bdcf8bb8d6f709120a47a38cc1de42e8d5d",
+    "glucopatterns.py": "533e5c438b06c73470e91fbd18f41c09dc4b5f57ebba6394658c9b2965372ca6",
+    "paired_analysis.py": "94f0443f903479ea95e84c137dc6f1a37f54ec5aae68df97c0f804eb56573453",
+    "outputs/model_comparison/predictions.json": "0c2db5094b7f1a14927de648ce75a0343d1ea4e01c07756a7d70e162ff07c50d",
+    "outputs/model_comparison/selection.json": "226b435f46f61d4e15203f70aa3366145ef5e3e7af6480c741c1613b66550380"
+  },
+  "selected_penalties": {
+    "0.1": 42,
+    "10.0": 1,
+    "100.0": 1
+  },
+  "evaluations": [
+    {
+      "setting": "unseen",
+      "history_budget": 0,
+      "n": 44,
+      "meals": 1179,
+      "macro_mae": {
+        "baseline": 24.247087544166096,
+        "fixed_pooled": 23.886500414543544,
+        "selected_pooled": 22.30504000971941
+      },
+      "per_person": [
+        {
+          "participant": "CGMacros-001",
+          "baseline": 18.461507914347283,
+          "fixed_pooled": 18.956886913083267,
+          "selected_pooled": 22.501490157432954
+        },
+        {
+          "participant": "CGMacros-002",
+          "baseline": 23.380768051737608,
+          "fixed_pooled": 22.989815751137765,
+          "selected_pooled": 21.594587483608525
+        },
+        {
+          "participant": "CGMacros-003",
+          "baseline": 21.94687958297633,
+          "fixed_pooled": 21.215919102331206,
+          "selected_pooled": 16.16308553575204
+        },
+        {
+          "participant": "CGMacros-004",
+          "baseline": 14.895884289357339,
+          "fixed_pooled": 14.289406631172291,
+          "selected_pooled": 11.714858542579055
+        },
+        {
+          "participant": "CGMacros-005",
+          "baseline": 19.312214325233295,
+          "fixed_pooled": 18.964592728578893,
+          "selected_pooled": 16.6884482492339
+        },
+        {
+          "participant": "CGMacros-006",
+          "baseline": 15.986140993140722,
+          "fixed_pooled": 16.28674897614822,
+          "selected_pooled": 18.040625639950893
+        },
+        {
+          "participant": "CGMacros-008",
+          "baseline": 20.618716226563176,
+          "fixed_pooled": 19.908506141189733,
+          "selected_pooled": 15.474420682579357
+        },
+        {
+          "participant": "CGMacros-009",
+          "baseline": 28.766687476057598,
+          "fixed_pooled": 28.79688399048531,
+          "selected_pooled": 29.685470559616867
+        },
+        {
+          "participant": "CGMacros-010",
+          "baseline": 17.709581787443177,
+          "fixed_pooled": 17.447919152698443,
+          "selected_pooled": 17.650806025892695
+        },
+        {
+          "participant": "CGMacros-011",
+          "baseline": 17.576265510550545,
+          "fixed_pooled": 16.95422118401842,
+          "selected_pooled": 13.524994802177357
+        },
+        {
+          "participant": "CGMacros-012",
+          "baseline": 25.09402690502454,
+          "fixed_pooled": 24.70192357544939,
+          "selected_pooled": 22.919164264568376
+        },
+        {
+          "participant": "CGMacros-013",
+          "baseline": 24.981779382787455,
+          "fixed_pooled": 25.0947271487431,
+          "selected_pooled": 25.528632364541185
+        },
+        {
+          "participant": "CGMacros-014",
+          "baseline": 21.816943784019546,
+          "fixed_pooled": 21.188972435276185,
+          "selected_pooled": 16.84476751710479
+        },
+        {
+          "participant": "CGMacros-015",
+          "baseline": 18.850519237436014,
+          "fixed_pooled": 18.868587850183683,
+          "selected_pooled": 20.387804578454578
+        },
+        {
+          "participant": "CGMacros-016",
+          "baseline": 16.526727781901215,
+          "fixed_pooled": 15.76359576896902,
+          "selected_pooled": 15.76359576896902
+        },
+        {
+          "participant": "CGMacros-017",
+          "baseline": 14.085907790712705,
+          "fixed_pooled": 13.879441728562629,
+          "selected_pooled": 14.382291914050818
+        },
+        {
+          "participant": "CGMacros-018",
+          "baseline": 15.2154504984671,
+          "fixed_pooled": 15.226561847044893,
+          "selected_pooled": 16.001266220760456
+        },
+        {
+          "participant": "CGMacros-019",
+          "baseline": 16.577638366468,
+          "fixed_pooled": 15.893841114016398,
+          "selected_pooled": 16.499370315776492
+        },
+        {
+          "participant": "CGMacros-020",
+          "baseline": 20.722520461424967,
+          "fixed_pooled": 20.25503927803797,
+          "selected_pooled": 16.55426447266149
+        },
+        {
+          "participant": "CGMacros-021",
+          "baseline": 14.577137748026274,
+          "fixed_pooled": 14.138984706679292,
+          "selected_pooled": 12.699808232537382
+        },
+        {
+          "participant": "CGMacros-022",
+          "baseline": 13.792664866468863,
+          "fixed_pooled": 13.817297279664308,
+          "selected_pooled": 13.524039518401915
+        },
+        {
+          "participant": "CGMacros-023",
+          "baseline": 23.88570014610814,
+          "fixed_pooled": 23.608145426503285,
+          "selected_pooled": 24.4485443239028
+        },
+        {
+          "participant": "CGMacros-026",
+          "baseline": 19.5888703670411,
+          "fixed_pooled": 19.15506088905467,
+          "selected_pooled": 16.807061478124858
+        },
+        {
+          "participant": "CGMacros-027",
+          "baseline": 18.393326171359206,
+          "fixed_pooled": 18.383758131926932,
+          "selected_pooled": 19.098914149469824
+        },
+        {
+          "participant": "CGMacros-028",
+          "baseline": 18.734645885264968,
+          "fixed_pooled": 18.246983893664584,
+          "selected_pooled": 15.509825529454748
+        },
+        {
+          "participant": "CGMacros-029",
+          "baseline": 13.381805275682224,
+          "fixed_pooled": 13.170104808267599,
+          "selected_pooled": 11.8358557571587
+        },
+        {
+          "participant": "CGMacros-030",
+          "baseline": 47.86567391590968,
+          "fixed_pooled": 46.988225806314055,
+          "selected_pooled": 40.70849241284055
+        },
+        {
+          "participant": "CGMacros-031",
+          "baseline": 20.250177209349992,
+          "fixed_pooled": 20.042398086610586,
+          "selected_pooled": 18.2101336110492
+        },
+        {
+          "participant": "CGMacros-032",
+          "baseline": 17.075606304329398,
+          "fixed_pooled": 17.42471537289417,
+          "selected_pooled": 23.116575082747623
+        },
+        {
+          "participant": "CGMacros-033",
+          "baseline": 46.11643861323862,
+          "fixed_pooled": 45.4686256663684,
+          "selected_pooled": 40.616171572422594
+        },
+        {
+          "participant": "CGMacros-034",
+          "baseline": 19.99847422080791,
+          "fixed_pooled": 20.145528754835592,
+          "selected_pooled": 22.654533904981633
+        },
+        {
+          "participant": "CGMacros-035",
+          "baseline": 41.846395516062806,
+          "fixed_pooled": 41.38692858112664,
+          "selected_pooled": 39.34826334370258
+        },
+        {
+          "participant": "CGMacros-036",
+          "baseline": 40.72635954528594,
+          "fixed_pooled": 39.100505425008116,
+          "selected_pooled": 35.24903298102881
+        },
+        {
+          "participant": "CGMacros-038",
+          "baseline": 23.077464855606674,
+          "fixed_pooled": 22.80787013519182,
+          "selected_pooled": 20.32407157158102
+        },
+        {
+          "participant": "CGMacros-039",
+          "baseline": 59.682613067477064,
+          "fixed_pooled": 58.79562486950644,
+          "selected_pooled": 52.83152970836338
+        },
+        {
+          "participant": "CGMacros-041",
+          "baseline": 36.57768372288909,
+          "fixed_pooled": 35.74173984526907,
+          "selected_pooled": 30.115328935912316
+        },
+        {
+          "participant": "CGMacros-042",
+          "baseline": 26.027041501350006,
+          "fixed_pooled": 25.6732583260139,
+          "selected_pooled": 23.509767807761612
+        },
+        {
+          "participant": "CGMacros-043",
+          "baseline": 15.832595985938335,
+          "fixed_pooled": 15.649947055147573,
+          "selected_pooled": 14.828607991936028
+        },
+        {
+          "participant": "CGMacros-044",
+          "baseline": 16.104066025955827,
+          "fixed_pooled": 15.637793747332367,
+          "selected_pooled": 12.56697768014824
+        },
+        {
+          "participant": "CGMacros-045",
+          "baseline": 38.562553892507616,
+          "fixed_pooled": 37.73308600254432,
+          "selected_pooled": 31.34903644239397
+        },
+        {
+          "participant": "CGMacros-046",
+          "baseline": 33.211335944817364,
+          "fixed_pooled": 33.23434679787703,
+          "selected_pooled": 32.82744916384331
+        },
+        {
+          "participant": "CGMacros-047",
+          "baseline": 35.460963544224555,
+          "fixed_pooled": 34.727076878327864,
+          "selected_pooled": 28.25139128177215
+        },
+        {
+          "participant": "CGMacros-048",
+          "baseline": 12.638930967056815,
+          "fixed_pooled": 12.458276734752214,
+          "selected_pooled": 14.801353656791889
+        },
+        {
+          "participant": "CGMacros-049",
+          "baseline": 40.937166284901195,
+          "fixed_pooled": 40.78614370190836,
+          "selected_pooled": 38.269049193616
+        }
+      ],
+      "contrasts": [
+        {
+          "comparison": "baseline minus selected_pooled",
+          "mean": 1.9420475344466885,
+          "ci95": [
+            1.0372323693483476,
+            2.857942304672561
+          ]
+        },
+        {
+          "comparison": "fixed_pooled minus selected_pooled",
+          "mean": 1.581460404824137,
+          "ci95": [
+            0.7692868673991801,
+            2.400571011001129
+          ]
+        }
+      ]
+    },
+    {
+      "setting": "history",
+      "history_budget": 3,
+      "n": 44,
+      "meals": 739,
+      "macro_mae": {
+        "baseline": 22.80935365401766,
+        "fixed_pooled": 22.519472529138472,
+        "selected_pooled": 21.520606489437363,
+        "personalized": 20.815491447198784,
+        "history_mean": 25.551793025946505
+      },
+      "per_person": [
+        {
+          "participant": "CGMacros-001",
+          "baseline": 18.888062401526767,
+          "fixed_pooled": 19.532544240276312,
+          "selected_pooled": 23.8503655737436,
+          "personalized": 18.673128038218074,
+          "history_mean": 6.911041666666668
+        },
+        {
+          "participant": "CGMacros-002",
+          "baseline": 25.20890554028375,
+          "fixed_pooled": 24.92684244249339,
+          "selected_pooled": 26.08570771676789,
+          "personalized": 24.044949931112644,
+          "history_mean": 23.976055555555565
+        },
+        {
+          "participant": "CGMacros-003",
+          "baseline": 16.824443776424772,
+          "fixed_pooled": 16.17661179856234,
+          "selected_pooled": 11.530618167909259,
+          "personalized": 13.654237147591328,
+          "history_mean": 32.130263157894746
+        },
+        {
+          "participant": "CGMacros-004",
+          "baseline": 14.386008039701347,
+          "fixed_pooled": 13.981145056492064,
+          "selected_pooled": 11.756131454679224,
+          "personalized": 13.183485960279713,
+          "history_mean": 19.00488095238095
+        },
+        {
+          "participant": "CGMacros-005",
+          "baseline": 13.081044995499978,
+          "fixed_pooled": 12.718942638199294,
+          "selected_pooled": 9.889183531031529,
+          "personalized": 9.372306942274491,
+          "history_mean": 37.98777777777778
+        },
+        {
+          "participant": "CGMacros-006",
+          "baseline": 14.553762085792762,
+          "fixed_pooled": 14.826317920219102,
+          "selected_pooled": 16.606511209385744,
+          "personalized": 13.321349374889323,
+          "history_mean": 12.635092592592592
+        },
+        {
+          "participant": "CGMacros-008",
+          "baseline": 17.119791520596884,
+          "fixed_pooled": 16.666947279487843,
+          "selected_pooled": 13.772824157574256,
+          "personalized": 12.851416218078997,
+          "history_mean": 19.59722222222222
+        },
+        {
+          "participant": "CGMacros-009",
+          "baseline": 24.31148639339928,
+          "fixed_pooled": 24.44452046353088,
+          "selected_pooled": 25.935742564064054,
+          "personalized": 18.80967951709798,
+          "history_mean": 11.101005291005285
+        },
+        {
+          "participant": "CGMacros-010",
+          "baseline": 15.284349447133835,
+          "fixed_pooled": 15.471940440141452,
+          "selected_pooled": 18.03071355641638,
+          "personalized": 20.051427575211388,
+          "history_mean": 21.284475308641966
+        },
+        {
+          "participant": "CGMacros-011",
+          "baseline": 18.610599996555155,
+          "fixed_pooled": 17.956840954971156,
+          "selected_pooled": 16.053131204189523,
+          "personalized": 15.764929029293349,
+          "history_mean": 17.10086956521739
+        },
+        {
+          "participant": "CGMacros-012",
+          "baseline": 24.356515838614573,
+          "fixed_pooled": 23.91238196050988,
+          "selected_pooled": 22.850904573685717,
+          "personalized": 20.735099803352437,
+          "history_mean": 28.16637566137566
+        },
+        {
+          "participant": "CGMacros-013",
+          "baseline": 26.446424743663897,
+          "fixed_pooled": 26.711105347807965,
+          "selected_pooled": 28.491380549387,
+          "personalized": 24.506417606419,
+          "history_mean": 18.90852777777778
+        },
+        {
+          "participant": "CGMacros-014",
+          "baseline": 22.625278785794734,
+          "fixed_pooled": 21.89586248207546,
+          "selected_pooled": 17.590244688389387,
+          "personalized": 17.554690245331333,
+          "history_mean": 23.32657894736842
+        },
+        {
+          "participant": "CGMacros-015",
+          "baseline": 16.382115389948808,
+          "fixed_pooled": 16.491129689209362,
+          "selected_pooled": 18.014932127833198,
+          "personalized": 16.2023926743461,
+          "history_mean": 16.12483333333333
+        },
+        {
+          "participant": "CGMacros-016",
+          "baseline": 15.106960518720134,
+          "fixed_pooled": 13.992994355099407,
+          "selected_pooled": 13.992994355099407,
+          "personalized": 13.716052277033441,
+          "history_mean": 14.978627450980392
+        },
+        {
+          "participant": "CGMacros-017",
+          "baseline": 11.029466573887882,
+          "fixed_pooled": 10.833609794192212,
+          "selected_pooled": 13.213426222422568,
+          "personalized": 11.763322298002715,
+          "history_mean": 11.113333333333333
+        },
+        {
+          "participant": "CGMacros-018",
+          "baseline": 16.75948206000903,
+          "fixed_pooled": 16.63168791405918,
+          "selected_pooled": 17.826860809331258,
+          "personalized": 16.341732667167538,
+          "history_mean": 15.363854166666666
+        },
+        {
+          "participant": "CGMacros-019",
+          "baseline": 15.106594163400837,
+          "fixed_pooled": 14.580505087877528,
+          "selected_pooled": 15.046277560589939,
+          "personalized": 16.80536789445561,
+          "history_mean": 19.728928571428575
+        },
+        {
+          "participant": "CGMacros-020",
+          "baseline": 21.103387603181123,
+          "fixed_pooled": 20.68552772751622,
+          "selected_pooled": 17.299912546271898,
+          "personalized": 16.634320647626865,
+          "history_mean": 21.210964912280698
+        },
+        {
+          "participant": "CGMacros-021",
+          "baseline": 13.271893170271348,
+          "fixed_pooled": 12.922466273217704,
+          "selected_pooled": 12.774229041863206,
+          "personalized": 11.525359436612389,
+          "history_mean": 12.886354166666669
+        },
+        {
+          "participant": "CGMacros-022",
+          "baseline": 14.494884220378575,
+          "fixed_pooled": 14.423701816450382,
+          "selected_pooled": 13.477073363244521,
+          "personalized": 11.50497558438029,
+          "history_mean": 10.882010582010583
+        },
+        {
+          "participant": "CGMacros-023",
+          "baseline": 22.4309662752283,
+          "fixed_pooled": 21.959792885906946,
+          "selected_pooled": 21.816776764567322,
+          "personalized": 20.771845489445592,
+          "history_mean": 23.697371794871795
+        },
+        {
+          "participant": "CGMacros-026",
+          "baseline": 19.488003700374435,
+          "fixed_pooled": 18.98680682425667,
+          "selected_pooled": 16.144323586575492,
+          "personalized": 16.288322128853746,
+          "history_mean": 19.567111111111117
+        },
+        {
+          "participant": "CGMacros-027",
+          "baseline": 17.08353468374189,
+          "fixed_pooled": 17.140298337001763,
+          "selected_pooled": 17.890016624498113,
+          "personalized": 15.64776614633494,
+          "history_mean": 15.469027777777782
+        },
+        {
+          "participant": "CGMacros-028",
+          "baseline": 21.84595073715881,
+          "fixed_pooled": 21.357547898016932,
+          "selected_pooled": 17.76159288568036,
+          "personalized": 18.99428970446625,
+          "history_mean": 27.65295321637427
+        },
+        {
+          "participant": "CGMacros-029",
+          "baseline": 10.110902999359498,
+          "fixed_pooled": 10.132803438368647,
+          "selected_pooled": 10.608711720805633,
+          "personalized": 14.158401336155185,
+          "history_mean": 22.854473684210525
+        },
+        {
+          "participant": "CGMacros-030",
+          "baseline": 41.44077621938596,
+          "fixed_pooled": 40.83856781453039,
+          "selected_pooled": 36.72396695965368,
+          "personalized": 42.42289174348979,
+          "history_mean": 64.49617647058824
+        },
+        {
+          "participant": "CGMacros-031",
+          "baseline": 17.38391316171197,
+          "fixed_pooled": 17.603967167225154,
+          "selected_pooled": 18.929304006076812,
+          "personalized": 16.317046608191376,
+          "history_mean": 19.047272727272723
+        },
+        {
+          "participant": "CGMacros-032",
+          "baseline": 18.891856304329398,
+          "fixed_pooled": 18.744110151103715,
+          "selected_pooled": 21.750924500273065,
+          "personalized": 14.273443046362614,
+          "history_mean": 11.40661111111111
+        },
+        {
+          "participant": "CGMacros-033",
+          "baseline": 45.91231980107436,
+          "fixed_pooled": 45.21061564512857,
+          "selected_pooled": 39.69445313612837,
+          "personalized": 37.49522820572865,
+          "history_mean": 44.35835858585859
+        },
+        {
+          "participant": "CGMacros-034",
+          "baseline": 20.823783306913374,
+          "fixed_pooled": 21.126498116506625,
+          "selected_pooled": 23.345837187363088,
+          "personalized": 16.348451228445512,
+          "history_mean": 6.628703703703702
+        },
+        {
+          "participant": "CGMacros-035",
+          "baseline": 39.2312103529767,
+          "fixed_pooled": 39.056595800843326,
+          "selected_pooled": 40.138333310805955,
+          "personalized": 34.14747778934416,
+          "history_mean": 36.13807189542483
+        },
+        {
+          "participant": "CGMacros-036",
+          "baseline": 42.98632792310684,
+          "fixed_pooled": 41.669015715902965,
+          "selected_pooled": 32.82327133458564,
+          "personalized": 31.898610968392997,
+          "history_mean": 42.3187134502924
+        },
+        {
+          "participant": "CGMacros-038",
+          "baseline": 18.87385081579612,
+          "fixed_pooled": 18.779142866869556,
+          "selected_pooled": 18.159311238227854,
+          "personalized": 18.733599741580022,
+          "history_mean": 19.250138888888888
+        },
+        {
+          "participant": "CGMacros-039",
+          "baseline": 55.245899502082565,
+          "fixed_pooled": 54.75278405454954,
+          "selected_pooled": 50.90274367163946,
+          "personalized": 57.62554131344324,
+          "history_mean": 85.46701754385965
+        },
+        {
+          "participant": "CGMacros-041",
+          "baseline": 35.48465266371875,
+          "fixed_pooled": 34.73997339852689,
+          "selected_pooled": 30.212921987278644,
+          "personalized": 30.87352525718953,
+          "history_mean": 38.83097222222222
+        },
+        {
+          "participant": "CGMacros-042",
+          "baseline": 26.50425033063332,
+          "fixed_pooled": 26.109509205908093,
+          "selected_pooled": 25.74434308470075,
+          "personalized": 28.443083504965106,
+          "history_mean": 34.102833333333336
+        },
+        {
+          "participant": "CGMacros-043",
+          "baseline": 14.490806882391354,
+          "fixed_pooled": 14.52698798318829,
+          "selected_pooled": 16.069035447519017,
+          "personalized": 18.40378928366838,
+          "history_mean": 22.884965277777777
+        },
+        {
+          "participant": "CGMacros-044",
+          "baseline": 16.469109188978592,
+          "fixed_pooled": 16.13811623965385,
+          "selected_pooled": 14.486692051124278,
+          "personalized": 14.144526310456293,
+          "history_mean": 17.208518518518524
+        },
+        {
+          "participant": "CGMacros-045",
+          "baseline": 35.73144174199153,
+          "fixed_pooled": 35.26916280180526,
+          "selected_pooled": 31.15521808461833,
+          "personalized": 35.63127134383982,
+          "history_mean": 48.85114583333333
+        },
+        {
+          "participant": "CGMacros-046",
+          "baseline": 29.873762561318,
+          "fixed_pooled": 29.78641151638906,
+          "selected_pooled": 28.426038363250377,
+          "personalized": 34.43775744444971,
+          "history_mean": 47.2689393939394
+        },
+        {
+          "participant": "CGMacros-047",
+          "baseline": 29.9059375,
+          "fixed_pooled": 29.361998320722996,
+          "selected_pooled": 24.16945861976928,
+          "personalized": 24.630810851164878,
+          "history_mean": 40.03489583333332
+        },
+        {
+          "participant": "CGMacros-048",
+          "baseline": 11.254592824790006,
+          "fixed_pooled": 10.857254936907836,
+          "selected_pooled": 11.600652616701971,
+          "personalized": 11.53307537392199,
+          "history_mean": 16.137671957671955
+        },
+        {
+          "participant": "CGMacros-049",
+          "baseline": 37.196254034929794,
+          "fixed_pooled": 36.92520448039054,
+          "selected_pooled": 34.26359337952096,
+          "personalized": 25.644227988081713,
+          "history_mean": 26.187875816993465
+        }
+      ],
+      "contrasts": [
+        {
+          "comparison": "baseline minus selected_pooled",
+          "mean": 1.2887471645802964,
+          "ci95": [
+            0.4021646291615883,
+            2.211249352695916
+          ]
+        },
+        {
+          "comparison": "fixed_pooled minus selected_pooled",
+          "mean": 0.9988660397011078,
+          "ci95": [
+            0.2063273821518163,
+            1.8280485431769296
+          ]
+        },
+        {
+          "comparison": "selected_pooled minus personalized",
+          "mean": 0.7051150422385797,
+          "ci95": [
+            -0.300923574949769,
+            1.7333039814520652
+          ]
+        },
+        {
+          "comparison": "history_mean minus personalized",
+          "mean": 4.736301578747721,
+          "ci95": [
+            2.405502474283011,
+            7.278163042156814
+          ]
+        }
+      ]
+    },
+    {
+      "setting": "history",
+      "history_budget": 5,
+      "n": 44,
+      "meals": 739,
+      "macro_mae": {
+        "baseline": 22.80935365401766,
+        "fixed_pooled": 22.519472529138472,
+        "selected_pooled": 21.520606489437363,
+        "personalized": 19.699002643422716,
+        "history_mean": 22.60178380420913
+      },
+      "per_person": [
+        {
+          "participant": "CGMacros-001",
+          "baseline": 18.888062401526767,
+          "fixed_pooled": 19.532544240276312,
+          "selected_pooled": 23.8503655737436,
+          "personalized": 14.154030065097805,
+          "history_mean": 7.233541666666666
+        },
+        {
+          "participant": "CGMacros-002",
+          "baseline": 25.20890554028375,
+          "fixed_pooled": 24.92684244249339,
+          "selected_pooled": 26.08570771676789,
+          "personalized": 22.70508812181517,
+          "history_mean": 21.592900000000007
+        },
+        {
+          "participant": "CGMacros-003",
+          "baseline": 16.824443776424772,
+          "fixed_pooled": 16.17661179856234,
+          "selected_pooled": 11.530618167909259,
+          "personalized": 13.796790023473331,
+          "history_mean": 26.70043859649123
+        },
+        {
+          "participant": "CGMacros-004",
+          "baseline": 14.386008039701347,
+          "fixed_pooled": 13.981145056492064,
+          "selected_pooled": 11.756131454679224,
+          "personalized": 13.263793381711821,
+          "history_mean": 15.375071428571427
+        },
+        {
+          "participant": "CGMacros-005",
+          "baseline": 13.081044995499978,
+          "fixed_pooled": 12.718942638199294,
+          "selected_pooled": 9.889183531031529,
+          "personalized": 10.072617119648504,
+          "history_mean": 29.260333333333342
+        },
+        {
+          "participant": "CGMacros-006",
+          "baseline": 14.553762085792762,
+          "fixed_pooled": 14.826317920219102,
+          "selected_pooled": 16.606511209385744,
+          "personalized": 12.355940364107271,
+          "history_mean": 15.696574074074077
+        },
+        {
+          "participant": "CGMacros-008",
+          "baseline": 17.119791520596884,
+          "fixed_pooled": 16.666947279487843,
+          "selected_pooled": 13.772824157574256,
+          "personalized": 13.057633406964165,
+          "history_mean": 17.39280392156863
+        },
+        {
+          "participant": "CGMacros-009",
+          "baseline": 24.31148639339928,
+          "fixed_pooled": 24.44452046353088,
+          "selected_pooled": 25.935742564064054,
+          "personalized": 11.221780983222553,
+          "history_mean": 17.694857142857146
+        },
+        {
+          "participant": "CGMacros-010",
+          "baseline": 15.284349447133835,
+          "fixed_pooled": 15.471940440141452,
+          "selected_pooled": 18.03071355641638,
+          "personalized": 15.746683129428646,
+          "history_mean": 13.634351851851848
+        },
+        {
+          "participant": "CGMacros-011",
+          "baseline": 18.610599996555155,
+          "fixed_pooled": 17.956840954971156,
+          "selected_pooled": 16.053131204189523,
+          "personalized": 16.35133425265507,
+          "history_mean": 19.138942028985507
+        },
+        {
+          "participant": "CGMacros-012",
+          "baseline": 24.356515838614573,
+          "fixed_pooled": 23.91238196050988,
+          "selected_pooled": 22.850904573685717,
+          "personalized": 20.676792587803014,
+          "history_mean": 25.575555555555553
+        },
+        {
+          "participant": "CGMacros-013",
+          "baseline": 26.446424743663897,
+          "fixed_pooled": 26.711105347807965,
+          "selected_pooled": 28.491380549387,
+          "personalized": 24.722808285389643,
+          "history_mean": 17.481250000000003
+        },
+        {
+          "participant": "CGMacros-014",
+          "baseline": 22.625278785794734,
+          "fixed_pooled": 21.89586248207546,
+          "selected_pooled": 17.590244688389387,
+          "personalized": 17.686844352247995,
+          "history_mean": 22.58763157894737
+        },
+        {
+          "participant": "CGMacros-015",
+          "baseline": 16.382115389948808,
+          "fixed_pooled": 16.491129689209362,
+          "selected_pooled": 18.014932127833198,
+          "personalized": 14.666133495167509,
+          "history_mean": 13.94383333333333
+        },
+        {
+          "participant": "CGMacros-016",
+          "baseline": 15.106960518720134,
+          "fixed_pooled": 13.992994355099407,
+          "selected_pooled": 13.992994355099407,
+          "personalized": 13.622390695318723,
+          "history_mean": 15.211627450980393
+        },
+        {
+          "participant": "CGMacros-017",
+          "baseline": 11.029466573887882,
+          "fixed_pooled": 10.833609794192212,
+          "selected_pooled": 13.213426222422568,
+          "personalized": 11.672294069193207,
+          "history_mean": 11.907848484848484
+        },
+        {
+          "participant": "CGMacros-018",
+          "baseline": 16.75948206000903,
+          "fixed_pooled": 16.63168791405918,
+          "selected_pooled": 17.826860809331258,
+          "personalized": 16.413982363555768,
+          "history_mean": 15.381854166666667
+        },
+        {
+          "participant": "CGMacros-019",
+          "baseline": 15.106594163400837,
+          "fixed_pooled": 14.580505087877528,
+          "selected_pooled": 15.046277560589939,
+          "personalized": 17.668659002468676,
+          "history_mean": 20.327023809523816
+        },
+        {
+          "participant": "CGMacros-020",
+          "baseline": 21.103387603181123,
+          "fixed_pooled": 20.68552772751622,
+          "selected_pooled": 17.299912546271898,
+          "personalized": 17.278000905699056,
+          "history_mean": 22.410263157894736
+        },
+        {
+          "participant": "CGMacros-021",
+          "baseline": 13.271893170271348,
+          "fixed_pooled": 12.922466273217704,
+          "selected_pooled": 12.774229041863206,
+          "personalized": 11.285027675055348,
+          "history_mean": 12.959354166666667
+        },
+        {
+          "participant": "CGMacros-022",
+          "baseline": 14.494884220378575,
+          "fixed_pooled": 14.423701816450382,
+          "selected_pooled": 13.477073363244521,
+          "personalized": 11.347814685641305,
+          "history_mean": 10.782412698412701
+        },
+        {
+          "participant": "CGMacros-023",
+          "baseline": 22.4309662752283,
+          "fixed_pooled": 21.959792885906946,
+          "selected_pooled": 21.816776764567322,
+          "personalized": 20.752080066930723,
+          "history_mean": 22.252320512820518
+        },
+        {
+          "participant": "CGMacros-026",
+          "baseline": 19.488003700374435,
+          "fixed_pooled": 18.98680682425667,
+          "selected_pooled": 16.144323586575492,
+          "personalized": 15.863857844492815,
+          "history_mean": 18.936511111111113
+        },
+        {
+          "participant": "CGMacros-027",
+          "baseline": 17.08353468374189,
+          "fixed_pooled": 17.140298337001763,
+          "selected_pooled": 17.890016624498113,
+          "personalized": 15.22744492336769,
+          "history_mean": 14.910375000000002
+        },
+        {
+          "participant": "CGMacros-028",
+          "baseline": 21.84595073715881,
+          "fixed_pooled": 21.357547898016932,
+          "selected_pooled": 17.76159288568036,
+          "personalized": 19.516076644091967,
+          "history_mean": 27.31549122807018
+        },
+        {
+          "participant": "CGMacros-029",
+          "baseline": 10.110902999359498,
+          "fixed_pooled": 10.132803438368647,
+          "selected_pooled": 10.608711720805633,
+          "personalized": 13.6225597193784,
+          "history_mean": 17.23638596491228
+        },
+        {
+          "participant": "CGMacros-030",
+          "baseline": 41.44077621938596,
+          "fixed_pooled": 40.83856781453039,
+          "selected_pooled": 36.72396695965368,
+          "personalized": 34.79861143149434,
+          "history_mean": 42.180137254901965
+        },
+        {
+          "participant": "CGMacros-031",
+          "baseline": 17.38391316171197,
+          "fixed_pooled": 17.603967167225154,
+          "selected_pooled": 18.929304006076812,
+          "personalized": 15.70620487853214,
+          "history_mean": 15.679636363636357
+        },
+        {
+          "participant": "CGMacros-032",
+          "baseline": 18.891856304329398,
+          "fixed_pooled": 18.744110151103715,
+          "selected_pooled": 21.750924500273065,
+          "personalized": 13.270086744263594,
+          "history_mean": 9.967366666666665
+        },
+        {
+          "participant": "CGMacros-033",
+          "baseline": 45.91231980107436,
+          "fixed_pooled": 45.21061564512857,
+          "selected_pooled": 39.69445313612837,
+          "personalized": 37.43740024017217,
+          "history_mean": 44.2695303030303
+        },
+        {
+          "participant": "CGMacros-034",
+          "baseline": 20.823783306913374,
+          "fixed_pooled": 21.126498116506625,
+          "selected_pooled": 23.345837187363088,
+          "personalized": 14.456513366946163,
+          "history_mean": 5.941222222222221
+        },
+        {
+          "participant": "CGMacros-035",
+          "baseline": 39.2312103529767,
+          "fixed_pooled": 39.056595800843326,
+          "selected_pooled": 40.138333310805955,
+          "personalized": 32.95538208372509,
+          "history_mean": 35.7078431372549
+        },
+        {
+          "participant": "CGMacros-036",
+          "baseline": 42.98632792310684,
+          "fixed_pooled": 41.669015715902965,
+          "selected_pooled": 32.82327133458564,
+          "personalized": 31.19617817066015,
+          "history_mean": 43.01543859649124
+        },
+        {
+          "participant": "CGMacros-038",
+          "baseline": 18.87385081579612,
+          "fixed_pooled": 18.779142866869556,
+          "selected_pooled": 18.159311238227854,
+          "personalized": 18.220527193017112,
+          "history_mean": 18.755499999999998
+        },
+        {
+          "participant": "CGMacros-039",
+          "baseline": 55.245899502082565,
+          "fixed_pooled": 54.75278405454954,
+          "selected_pooled": 50.90274367163946,
+          "personalized": 51.12285378980623,
+          "history_mean": 61.85436842105264
+        },
+        {
+          "participant": "CGMacros-041",
+          "baseline": 35.48465266371875,
+          "fixed_pooled": 34.73997339852689,
+          "selected_pooled": 30.212921987278644,
+          "personalized": 26.78038751444754,
+          "history_mean": 32.45125
+        },
+        {
+          "participant": "CGMacros-042",
+          "baseline": 26.50425033063332,
+          "fixed_pooled": 26.109509205908093,
+          "selected_pooled": 25.74434308470075,
+          "personalized": 26.123693210856047,
+          "history_mean": 26.81243333333333
+        },
+        {
+          "participant": "CGMacros-043",
+          "baseline": 14.490806882391354,
+          "fixed_pooled": 14.52698798318829,
+          "selected_pooled": 16.069035447519017,
+          "personalized": 16.509144787719016,
+          "history_mean": 18.650937499999994
+        },
+        {
+          "participant": "CGMacros-044",
+          "baseline": 16.469109188978592,
+          "fixed_pooled": 16.13811623965385,
+          "selected_pooled": 14.486692051124278,
+          "personalized": 14.723408389594216,
+          "history_mean": 17.776200000000006
+        },
+        {
+          "participant": "CGMacros-045",
+          "baseline": 35.73144174199153,
+          "fixed_pooled": 35.26916280180526,
+          "selected_pooled": 31.15521808461833,
+          "personalized": 31.119895218851067,
+          "history_mean": 39.1078125
+        },
+        {
+          "participant": "CGMacros-046",
+          "baseline": 29.873762561318,
+          "fixed_pooled": 29.78641151638906,
+          "selected_pooled": 28.426038363250377,
+          "personalized": 35.04026399579968,
+          "history_mean": 36.97590909090909
+        },
+        {
+          "participant": "CGMacros-047",
+          "baseline": 29.9059375,
+          "fixed_pooled": 29.361998320722996,
+          "selected_pooled": 24.16945861976928,
+          "personalized": 24.665729183702027,
+          "history_mean": 34.14077083333333
+        },
+        {
+          "participant": "CGMacros-048",
+          "baseline": 11.254592824790006,
+          "fixed_pooled": 10.857254936907836,
+          "selected_pooled": 11.600652616701971,
+          "personalized": 11.163344161793683,
+          "history_mean": 12.053539682539684
+        },
+        {
+          "participant": "CGMacros-049",
+          "baseline": 37.196254034929794,
+          "fixed_pooled": 36.92520448039054,
+          "selected_pooled": 34.26359337952096,
+          "personalized": 26.71803378529309,
+          "history_mean": 26.199039215686273
+        }
+      ],
+      "contrasts": [
+        {
+          "comparison": "baseline minus selected_pooled",
+          "mean": 1.2887471645802964,
+          "ci95": [
+            0.4021646291615883,
+            2.211249352695916
+          ]
+        },
+        {
+          "comparison": "fixed_pooled minus selected_pooled",
+          "mean": 0.9988660397011078,
+          "ci95": [
+            0.2063273821518163,
+            1.8280485431769296
+          ]
+        },
+        {
+          "comparison": "selected_pooled minus personalized",
+          "mean": 1.8216038460146473,
+          "ci95": [
+            0.753677205076289,
+            2.981657288752754
+          ]
+        },
+        {
+          "comparison": "history_mean minus personalized",
+          "mean": 2.9027811607864127,
+          "ci95": [
+            1.4066130531126875,
+            4.46749123354328
+          ]
+        }
+      ]
+    },
+    {
+      "setting": "history",
+      "history_budget": 10,
+      "n": 44,
+      "meals": 739,
+      "macro_mae": {
+        "baseline": 22.80935365401766,
+        "fixed_pooled": 22.519472529138472,
+        "selected_pooled": 21.520606489437363,
+        "personalized": 19.075448246725067,
+        "history_mean": 21.65051196899487
+      },
+      "per_person": [
+        {
+          "participant": "CGMacros-001",
+          "baseline": 18.888062401526767,
+          "fixed_pooled": 19.532544240276312,
+          "selected_pooled": 23.8503655737436,
+          "personalized": 10.44238616238789,
+          "history_mean": 6.933270833333335
+        },
+        {
+          "participant": "CGMacros-002",
+          "baseline": 25.20890554028375,
+          "fixed_pooled": 24.92684244249339,
+          "selected_pooled": 26.08570771676789,
+          "personalized": 24.25434313421677,
+          "history_mean": 23.908166666666673
+        },
+        {
+          "participant": "CGMacros-003",
+          "baseline": 16.824443776424772,
+          "fixed_pooled": 16.17661179856234,
+          "selected_pooled": 11.530618167909259,
+          "personalized": 15.483145936966896,
+          "history_mean": 24.46000877192983
+        },
+        {
+          "participant": "CGMacros-004",
+          "baseline": 14.386008039701347,
+          "fixed_pooled": 13.981145056492064,
+          "selected_pooled": 11.756131454679224,
+          "personalized": 12.095232348571669,
+          "history_mean": 15.59204761904762
+        },
+        {
+          "participant": "CGMacros-005",
+          "baseline": 13.081044995499978,
+          "fixed_pooled": 12.718942638199294,
+          "selected_pooled": 9.889183531031529,
+          "personalized": 10.817846225522231,
+          "history_mean": 19.881811111111116
+        },
+        {
+          "participant": "CGMacros-006",
+          "baseline": 14.553762085792762,
+          "fixed_pooled": 14.826317920219102,
+          "selected_pooled": 16.606511209385744,
+          "personalized": 12.074349410396026,
+          "history_mean": 14.925370370370372
+        },
+        {
+          "participant": "CGMacros-008",
+          "baseline": 17.119791520596884,
+          "fixed_pooled": 16.666947279487843,
+          "selected_pooled": 13.772824157574256,
+          "personalized": 12.831790133662949,
+          "history_mean": 17.65008823529412
+        },
+        {
+          "participant": "CGMacros-009",
+          "baseline": 24.31148639339928,
+          "fixed_pooled": 24.44452046353088,
+          "selected_pooled": 25.935742564064054,
+          "personalized": 9.309540444482957,
+          "history_mean": 13.528849206349209
+        },
+        {
+          "participant": "CGMacros-010",
+          "baseline": 15.284349447133835,
+          "fixed_pooled": 15.471940440141452,
+          "selected_pooled": 18.03071355641638,
+          "personalized": 15.120820371729664,
+          "history_mean": 12.37987037037037
+        },
+        {
+          "participant": "CGMacros-011",
+          "baseline": 18.610599996555155,
+          "fixed_pooled": 17.956840954971156,
+          "selected_pooled": 16.053131204189523,
+          "personalized": 16.795458950502077,
+          "history_mean": 19.334282608695656
+        },
+        {
+          "participant": "CGMacros-012",
+          "baseline": 24.356515838614573,
+          "fixed_pooled": 23.91238196050988,
+          "selected_pooled": 22.850904573685717,
+          "personalized": 20.620365817123957,
+          "history_mean": 24.950373015873016
+        },
+        {
+          "participant": "CGMacros-013",
+          "baseline": 26.446424743663897,
+          "fixed_pooled": 26.711105347807965,
+          "selected_pooled": 28.491380549387,
+          "personalized": 19.651577245496384,
+          "history_mean": 12.803183333333335
+        },
+        {
+          "participant": "CGMacros-014",
+          "baseline": 22.625278785794734,
+          "fixed_pooled": 21.89586248207546,
+          "selected_pooled": 17.590244688389387,
+          "personalized": 17.465910403554233,
+          "history_mean": 23.09288596491228
+        },
+        {
+          "participant": "CGMacros-015",
+          "baseline": 16.382115389948808,
+          "fixed_pooled": 16.491129689209362,
+          "selected_pooled": 18.014932127833198,
+          "personalized": 14.4456133490003,
+          "history_mean": 15.19523333333333
+        },
+        {
+          "participant": "CGMacros-016",
+          "baseline": 15.106960518720134,
+          "fixed_pooled": 13.992994355099407,
+          "selected_pooled": 13.992994355099407,
+          "personalized": 13.762009753276633,
+          "history_mean": 15.194215686274509
+        },
+        {
+          "participant": "CGMacros-017",
+          "baseline": 11.029466573887882,
+          "fixed_pooled": 10.833609794192212,
+          "selected_pooled": 13.213426222422568,
+          "personalized": 9.618420190254474,
+          "history_mean": 12.43471212121212
+        },
+        {
+          "participant": "CGMacros-018",
+          "baseline": 16.75948206000903,
+          "fixed_pooled": 16.63168791405918,
+          "selected_pooled": 17.826860809331258,
+          "personalized": 18.355993296103524,
+          "history_mean": 16.9115625
+        },
+        {
+          "participant": "CGMacros-019",
+          "baseline": 15.106594163400837,
+          "fixed_pooled": 14.580505087877528,
+          "selected_pooled": 15.046277560589939,
+          "personalized": 15.555996844855411,
+          "history_mean": 15.853309523809527
+        },
+        {
+          "participant": "CGMacros-020",
+          "baseline": 21.103387603181123,
+          "fixed_pooled": 20.68552772751622,
+          "selected_pooled": 17.299912546271898,
+          "personalized": 17.272590783480997,
+          "history_mean": 21.301807017543855
+        },
+        {
+          "participant": "CGMacros-021",
+          "baseline": 13.271893170271348,
+          "fixed_pooled": 12.922466273217704,
+          "selected_pooled": 12.774229041863206,
+          "personalized": 11.566577797426035,
+          "history_mean": 13.653479166666665
+        },
+        {
+          "participant": "CGMacros-022",
+          "baseline": 14.494884220378575,
+          "fixed_pooled": 14.423701816450382,
+          "selected_pooled": 13.477073363244521,
+          "personalized": 11.778024648688591,
+          "history_mean": 10.750809523809526
+        },
+        {
+          "participant": "CGMacros-023",
+          "baseline": 22.4309662752283,
+          "fixed_pooled": 21.959792885906946,
+          "selected_pooled": 21.816776764567322,
+          "personalized": 21.087616188545613,
+          "history_mean": 21.58888461538462
+        },
+        {
+          "participant": "CGMacros-026",
+          "baseline": 19.488003700374435,
+          "fixed_pooled": 18.98680682425667,
+          "selected_pooled": 16.144323586575492,
+          "personalized": 15.861441746243077,
+          "history_mean": 18.75174444444445
+        },
+        {
+          "participant": "CGMacros-027",
+          "baseline": 17.08353468374189,
+          "fixed_pooled": 17.140298337001763,
+          "selected_pooled": 17.890016624498113,
+          "personalized": 15.680950103348245,
+          "history_mean": 15.78291666666667
+        },
+        {
+          "participant": "CGMacros-028",
+          "baseline": 21.84595073715881,
+          "fixed_pooled": 21.357547898016932,
+          "selected_pooled": 17.76159288568036,
+          "personalized": 18.840015801870194,
+          "history_mean": 24.92993859649123
+        },
+        {
+          "participant": "CGMacros-029",
+          "baseline": 10.110902999359498,
+          "fixed_pooled": 10.132803438368647,
+          "selected_pooled": 10.608711720805633,
+          "personalized": 13.926120590565944,
+          "history_mean": 15.952008771929828
+        },
+        {
+          "participant": "CGMacros-030",
+          "baseline": 41.44077621938596,
+          "fixed_pooled": 40.83856781453039,
+          "selected_pooled": 36.72396695965368,
+          "personalized": 32.467204266903366,
+          "history_mean": 39.65854901960785
+        },
+        {
+          "participant": "CGMacros-031",
+          "baseline": 17.38391316171197,
+          "fixed_pooled": 17.603967167225154,
+          "selected_pooled": 18.929304006076812,
+          "personalized": 14.59404184994581,
+          "history_mean": 14.486212121212116
+        },
+        {
+          "participant": "CGMacros-032",
+          "baseline": 18.891856304329398,
+          "fixed_pooled": 18.744110151103715,
+          "selected_pooled": 21.750924500273065,
+          "personalized": 13.746042720019576,
+          "history_mean": 9.830766666666667
+        },
+        {
+          "participant": "CGMacros-033",
+          "baseline": 45.91231980107436,
+          "fixed_pooled": 45.21061564512857,
+          "selected_pooled": 39.69445313612837,
+          "personalized": 37.72367532890803,
+          "history_mean": 45.66292424242424
+        },
+        {
+          "participant": "CGMacros-034",
+          "baseline": 20.823783306913374,
+          "fixed_pooled": 21.126498116506625,
+          "selected_pooled": 23.345837187363088,
+          "personalized": 14.252901076865262,
+          "history_mean": 7.116000000000002
+        },
+        {
+          "participant": "CGMacros-035",
+          "baseline": 39.2312103529767,
+          "fixed_pooled": 39.056595800843326,
+          "selected_pooled": 40.138333310805955,
+          "personalized": 31.904246719032717,
+          "history_mean": 34.99424509803922
+        },
+        {
+          "participant": "CGMacros-036",
+          "baseline": 42.98632792310684,
+          "fixed_pooled": 41.669015715902965,
+          "selected_pooled": 32.82327133458564,
+          "personalized": 33.022219696641166,
+          "history_mean": 42.71383333333334
+        },
+        {
+          "participant": "CGMacros-038",
+          "baseline": 18.87385081579612,
+          "fixed_pooled": 18.779142866869556,
+          "selected_pooled": 18.159311238227854,
+          "personalized": 19.065855563141962,
+          "history_mean": 21.3768125
+        },
+        {
+          "participant": "CGMacros-039",
+          "baseline": 55.245899502082565,
+          "fixed_pooled": 54.75278405454954,
+          "selected_pooled": 50.90274367163946,
+          "personalized": 44.016749417657245,
+          "history_mean": 52.47135087719299
+        },
+        {
+          "participant": "CGMacros-041",
+          "baseline": 35.48465266371875,
+          "fixed_pooled": 34.73997339852689,
+          "selected_pooled": 30.212921987278644,
+          "personalized": 26.610169419159906,
+          "history_mean": 32.82629166666667
+        },
+        {
+          "participant": "CGMacros-042",
+          "baseline": 26.50425033063332,
+          "fixed_pooled": 26.109509205908093,
+          "selected_pooled": 25.74434308470075,
+          "personalized": 28.908976952662243,
+          "history_mean": 29.880233333333337
+        },
+        {
+          "participant": "CGMacros-043",
+          "baseline": 14.490806882391354,
+          "fixed_pooled": 14.52698798318829,
+          "selected_pooled": 16.069035447519017,
+          "personalized": 19.185546121044606,
+          "history_mean": 22.085749999999997
+        },
+        {
+          "participant": "CGMacros-044",
+          "baseline": 16.469109188978592,
+          "fixed_pooled": 16.13811623965385,
+          "selected_pooled": 14.486692051124278,
+          "personalized": 14.512703436483012,
+          "history_mean": 18.631388888888896
+        },
+        {
+          "participant": "CGMacros-045",
+          "baseline": 35.73144174199153,
+          "fixed_pooled": 35.26916280180526,
+          "selected_pooled": 31.15521808461833,
+          "personalized": 29.242226778349497,
+          "history_mean": 34.69735416666666
+        },
+        {
+          "participant": "CGMacros-046",
+          "baseline": 29.873762561318,
+          "fixed_pooled": 29.78641151638906,
+          "selected_pooled": 28.426038363250377,
+          "personalized": 25.75533721846553,
+          "history_mean": 27.908545454545454
+        },
+        {
+          "participant": "CGMacros-047",
+          "baseline": 29.9059375,
+          "fixed_pooled": 29.361998320722996,
+          "selected_pooled": 24.16945861976928,
+          "personalized": 24.902038748657443,
+          "history_mean": 32.041958333333326
+        },
+        {
+          "participant": "CGMacros-048",
+          "baseline": 11.254592824790006,
+          "fixed_pooled": 10.857254936907836,
+          "selected_pooled": 11.600652616701971,
+          "personalized": 11.71295330338803,
+          "history_mean": 11.124039682539683
+        },
+        {
+          "participant": "CGMacros-049",
+          "baseline": 37.196254034929794,
+          "fixed_pooled": 36.92520448039054,
+          "selected_pooled": 34.26359337952096,
+          "personalized": 22.98269656030485,
+          "history_mean": 27.375441176470588
+        }
+      ],
+      "contrasts": [
+        {
+          "comparison": "baseline minus selected_pooled",
+          "mean": 1.2887471645802964,
+          "ci95": [
+            0.4021646291615883,
+            2.211249352695916
+          ]
+        },
+        {
+          "comparison": "fixed_pooled minus selected_pooled",
+          "mean": 0.9988660397011078,
+          "ci95": [
+            0.2063273821518163,
+            1.8280485431769296
+          ]
+        },
+        {
+          "comparison": "selected_pooled minus personalized",
+          "mean": 2.4451582427122958,
+          "ci95": [
+            1.2103117389629636,
+            3.7916875328184405
+          ]
+        },
+        {
+          "comparison": "history_mean minus personalized",
+          "mean": 2.5750637222698023,
+          "ci95": [
+            1.4140201162509265,
+            3.7141226579005573
+          ]
+        }
+      ]
+    }
+  ]
+}

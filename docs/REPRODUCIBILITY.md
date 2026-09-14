@@ -1,4 +1,12 @@
-# Reproducing GlucoTrust v0.1
+# Reproducing GlucoTrust + GlucoPatterns v0.2
+
+## Selected-model joint experiment and explorer
+
+Run `patterns`, `history`, and `compare` first, then `python reproduce.py selected-history`. This verifies upstream result/code hashes, reuses selected penalties and verifies exact v1 mask hashes. `python reproduce.py dashboard` also generates `docs/demo/research.html` from aggregate results. The two diagnostic cost terms sum to total cost under the declared ordering, not a unique causal decomposition. These development additions do not overwrite the original v0.1 ZIP.
+
+## Nested model comparison
+
+With existing `patterns` outputs and NumPy, run `python reproduce.py compare`. Read `docs/MODEL_COMPARISON_PROTOCOL.md` and `docs/MODEL_COMPARISON_RESULTS.md`. Original input hashes are checked, and local inner-fold assignments, candidate scores and selected penalties are written to `outputs/model_comparison/selection.json`. Per-meal predictions remain local. The first fixed-parameter benchmark is not overwritten.
 
 ## Joint history-input experiment
 
@@ -6,11 +14,11 @@ After `python reproduce.py patterns`, run `python reproduce.py history` with the
 
 ## GlucoPatterns development benchmark
 
-Install `python -m pip install -r requirements-patterns.txt`, then run `python reproduce.py patterns` with local CGMacros records, or `python reproduce.py patterns --download` to retrieve them explicitly. The protocol and aggregate report are `docs/GLUCOPATTERNS_PROTOCOL.md` and `docs/GLUCOPATTERNS_RESULTS.md`. Local event exclusions, exact split IDs, derived features and per-meal predictions stay in `outputs/glucopatterns/`; do not publish those local files. The aggregate JSON records NumPy version and source/protocol/code/output hashes. This is a development extension, not an update to the existing v0.1 ZIP.
+Install `python -m pip install -r requirements-patterns.txt`, then run `python reproduce.py patterns` with local CGMacros records, or `python reproduce.py patterns --download` to retrieve them explicitly. The protocol and aggregate report are `docs/GLUCOPATTERNS_PROTOCOL.md` and `docs/GLUCOPATTERNS_RESULTS.md`. Local event exclusions, exact split IDs, derived features and per-meal predictions stay in `outputs/glucopatterns/`; do not publish those local files. The aggregate JSON records NumPy version and source/protocol/code/output hashes. Included in v0.2; the historical v0.1 ZIP is preserved.
 
 ## Post-v0.1 paired analysis
 
-After generating CGMacros and Shanghai outputs, run `python reproduce.py paired`. This creates `docs/PAIRED_RESULTS.md` and `docs/paired-results.json` from `docs/paired-analysis-config.json`. The 10,000-draw participant bootstrap uses only the standard library, retains all within-participant contrasts, and records input/code/configuration SHA-256 hashes. Run `python -m unittest discover -s tests -v` to validate the estimator and existing workflows. This extension is exploratory and not part of a published v0.2 release.
+After generating CGMacros and Shanghai outputs, run `python reproduce.py paired`. This creates `docs/PAIRED_RESULTS.md` and `docs/paired-results.json` from `docs/paired-analysis-config.json`. The 10,000-draw participant bootstrap uses only the standard library, retains all within-participant contrasts, and records input/code/configuration SHA-256 hashes. Run `python -m unittest discover -s tests -v` to validate the estimator and existing workflows. This extension is exploratory and included in the v0.2 source snapshot.
 
 ## Offline smoke run
 

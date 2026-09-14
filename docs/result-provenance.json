@@ -1,12 +1,12 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "python": "3.12.14",
   "result_sha256": {
-    "outputs/cgmacros_audit/robustness.json": "173bdf895f5deabf833730c905b6cf2d92031ea0b85d8a81ce22b2dd809d8fea",
-    "outputs/shanghai_v5/experiment/results.json": "4c40193869cd975b4f4e3423e0543c5e525b065d1f3a8b36a21415040deda83e",
+    "outputs/cgmacros_audit/robustness.json": "5dd498d6d0552644ebd92233b3cdb90179455fa0277016637bf79ee83f35c049",
+    "outputs/shanghai_v5/experiment/results.json": "49e4771b66b162b61f75c49c49939cf9b10f39175f67d4deb569def0cad32999",
     "outputs/shanghai_v5/audit.json": "090e8c558cb032f4d099710c2c468bf793e12d2cca03efe4a11ee9bed2387168",
     "outputs/physiocgm/audit.json": "4ab9ac637d88a11cc0abb7abc170e7ddb18427b08e67b897ad855ef55043c864",
     "outputs/cgmacros/audit.json": "13e18320aa2ec39881e836f8d6835691a505cf70471a08460db907385d02f9ec"
   },
-  "builder_sha256": "648bb151b4ed1b95ef443d07c1f43869f2aa8a285e52e856d80ef606519104bf"
+  "builder_sha256": "bd1f601eb5c725ddc206ee14c8f144304c6202cf76d7d36121493f63cb277ee5"
 }

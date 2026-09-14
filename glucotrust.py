@@ -122,7 +122,7 @@ def main():
         parser.error('Empty dataset')
     results = experiment(data,args.ratios,args.seeds,args.support_cap_minutes)
     args.out.mkdir(parents=True,exist_ok=True)
-    payload = {'schema_version':'1.0','software_version':'0.1.0','synthetic':args.input is None,'source_label':args.source_label,'support_cap_minutes':args.support_cap_minutes,
+    payload = {'schema_version':'1.0','software_version':(Path(__file__).resolve().parent/'VERSION').read_text().strip(),'synthetic':args.input is None,'source_label':args.source_label,'support_cap_minutes':args.support_cap_minutes,
         'ratios':args.ratios,'seeds':args.seeds,
         'input_sha256':hashlib.sha256(json.dumps(data,sort_keys=True).encode()).hexdigest(),
         'code_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'results':results}

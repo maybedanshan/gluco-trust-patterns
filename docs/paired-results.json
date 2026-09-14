@@ -39,9 +39,9 @@
     "multiplicity": "pointwise intervals; no familywise coverage or confirmatory significance claim"
   },
   "source_sha256": {
-    "outputs/cgmacros/dexcom/results.json": "8ea413f21f6b1bcae8e68b84264284ee7e98d9ba1b54b56f096bc3dd4cb752df",
-    "outputs/cgmacros/libre/results.json": "4eca48e96f26e7544e1de3b809dc6e914527ccb861dbc048f8444ef1c1f99698",
-    "outputs/shanghai_v5/experiment/results.json": "4c40193869cd975b4f4e3423e0543c5e525b065d1f3a8b36a21415040deda83e"
+    "outputs/cgmacros/dexcom/results.json": "37b2b8325b7412cee9a5e7f1a102b3a821522adf4be3ca059c6d8e4767edee9a",
+    "outputs/cgmacros/libre/results.json": "60d83110e697320379f9d2a0b6993feb8b314df1781d2e5087c48cab346c99d9",
+    "outputs/shanghai_v5/experiment/results.json": "49e4771b66b162b61f75c49c49939cf9b10f39175f67d4deb569def0cad32999"
   },
   "config_sha256": "038b794bf746328ae51141eb2c3788cd2a3ac0cac80dbe3389a71f82a36960cf",
   "code_sha256": "94f0443f903479ea95e84c137dc6f1a37f54ec5aae68df97c0f804eb56573453",

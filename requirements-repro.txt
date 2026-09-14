@@ -1,0 +1,5 @@
+# Validated full-research environment: Python 3.12.
+numpy==2.3.5
+openpyxl==3.1.5
+et_xmlfile==2.0.0
+xlrd==2.0.2

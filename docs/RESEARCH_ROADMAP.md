@@ -24,6 +24,8 @@ Completion: tested estimators, deterministic configurations, result tables gener
 
 ## Toward v0.3: meal response prediction — first local benchmark implemented
 
+The subsequent [model comparison](MODEL_COMPARISON_RESULTS.md) adds training-participant inner validation for ridge penalties and a history-only mean baseline. Its [separate protocol](MODEL_COMPARISON_PROTOCOL.md) preserves the original splits and distinguishes these exploratory results from the first fixed-penalty benchmark. External and prospective validation remain open.
+
 The [protocol](GLUCOPATTERNS_PROTOCOL.md) now fixes the choices discussed below, and [results](GLUCOPATTERNS_RESULTS.md) report the first comparison. The pooled method is fixed-penalty ridge regression; personalization uses a shrunk early-history residual offset. No tuned model search, external meal validation or native-sample online forecast is claimed. This is not a published v0.3 release.
 
 Use existing CGMacros meal metadata first. Freeze the outcome definition, meal eligibility rules and evaluation protocol before fitting models. A candidate primary outcome is the time-weighted mean glucose during 0–120 minutes after a meal minus the mean during the preceding 30 minutes. Decide boundary coverage and overlapping-meal handling explicitly; do not silently fill missing outcome windows.
@@ -40,6 +42,8 @@ Report participant-macro-averaged MAE, paired comparisons and the number of usab
 Completion: one frozen protocol, simple baselines, leakage checks, an auditable split manifest and an honest report. Shanghai meal data can be considered afterward, subject to a separate harmonization audit.
 
 ## Toward v0.4: data quality and personalization — input-only experiment implemented locally
+
+The [selected-model replication and decomposition](SELECTED_HISTORY_RESULTS.md) now verifies all original mask hashes, uses the stored inner-selected penalties, and separates availability from retained-feature cost in a declared diagnostic order. Results are integrated into the [research explorer](demo/research.html). Historical-label degradation remains untested.
 
 The [joint protocol](HISTORY_MISSINGNESS_PROTOCOL.md) and [results](HISTORY_MISSINGNESS_RESULTS.md) now connect the modules using ten early meals and fixed later test meals. Historical outcome-label degradation, alternative adaptation policies and other history budgets remain future extensions. This is not a published v0.4 release.
 

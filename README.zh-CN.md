@@ -1,5 +1,11 @@
 # GlucoTrust
 
+**当前研究版本 v0.2.0：** Python 3.12 安装 `requirements-repro.txt` 后，运行 `python reproduce.py full` 完整复现所有模块；缺少原始数据时显式添加 `--download`。旧版 ZIP 保留。
+
+**最新共同实验：** [选参模型的历史缺失与误差分解](docs/SELECTED_HISTORY_RESULTS.md) · [交互研究页面](docs/demo/research.html)。复用旧模型的缺失掩码和测试餐次，分别报告可用餐次减少与保留餐次特征损坏的诊断性贡献；历史标签仍完整。运行 `python reproduce.py selected-history` 后用 `python reproduce.py dashboard` 更新展示。
+
+**新增模型核查：** [训练参与者内部选参与个人历史均值基线](docs/MODEL_COMPARISON_RESULTS.md)。运行 `python reproduce.py compare`；外层测试参与者不参与选参。第一版固定参数结果与缺失实验保持原样。
+
 **两个模块的共同实验：** [历史输入缺失与个体化预测](docs/HISTORY_MISSINGNESS_RESULTS.md)已完成。固定历史标签与后期测试餐次，仅损坏历史餐前 CGM 输入；运行 `python reproduce.py history` 可复现。夜间缺失必须结合实际餐前输入覆盖率解释。
 
 **GlucoPatterns 首次实验：** [实验协议](docs/GLUCOPATTERNS_PROTOCOL.md)与[餐次审查／模型比较报告](docs/GLUCOPATTERNS_RESULTS.md)已完成。安装 `requirements-patterns.txt` 后运行 `python reproduce.py patterns`。这是处理后曲线上的回顾性基准，不能视为已验证的实时预测能力。

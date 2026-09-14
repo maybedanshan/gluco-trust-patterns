@@ -1,0 +1,8 @@
+{
+  "sha256": {
+    "docs/model-comparison-results.json": "deb174144cfbf034dc21c1740e2cd67e8be9f4ff0e5940fe21beb75302b25c9f",
+    "docs/selected-history-results.json": "72aa1fcb9d781146e5a397d5c5bd98b79007301fb50d8bf026484c808815341a",
+    "research_dashboard.html": "7dea45cdb8309d79a0788ff10a8fc2b86cdf8b9d1dd1b74684fd7aefb4caab1d",
+    "build_research.py": "e8abc6332398b70f2074f40155ae030ae5cffef15a86edff5a709dd829d384c5"
+  }
+}

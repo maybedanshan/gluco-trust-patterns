@@ -68,14 +68,19 @@ def main():
     args.out.parent.mkdir(parents=True,exist_ok=True)
     payload=json.dumps(cohorts,separators=(',',':'),ensure_ascii=True).replace('<','\\u003c')
     page=(ROOT/'release_dashboard.html').read_text(encoding='utf-8').replace('__PAYLOAD__',payload)
+    research_available=not args.demo_only and (ROOT/'docs/selected-history-results.json').exists()
+    page=page.replace('__RESEARCH_LINK__','<a href="../demo/research.html">Prediction &amp; history</a>' if research_available else '')
     docs_relative=Path(os.path.relpath(ROOT/'docs',args.out.resolve().parent)).as_posix()
     page=page.replace('href="../','href="'+docs_relative+'/')
     args.out.write_text(page,encoding='utf-8')
-    (args.out.parent/'provenance.json').write_text(json.dumps({'release':'0.1.0','source_result_sha256':sources,
+    (args.out.parent/'provenance.json').write_text(json.dumps({'release':(ROOT/'VERSION').read_text().strip(),'source_result_sha256':sources,
         'builder_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'template_sha256':hashlib.sha256((ROOT/'release_dashboard.html').read_bytes()).hexdigest(),
         'notes':'Only derived participant/seed summaries embedded; no glucose traces, meal events, or original timestamps.'},indent=2),encoding='utf-8')
     print(f'{len(cohorts)} cohort/window views -> {args.out}')
+    if not args.demo_only and (ROOT/'docs/selected-history-results.json').exists():
+        from build_research import main as build_research
+        build_research()
 
 
 if __name__=='__main__': main()

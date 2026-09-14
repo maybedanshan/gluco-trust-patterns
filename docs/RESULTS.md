@@ -1,6 +1,6 @@
-# GlucoTrust v0.1 — Results and limitations
+# GlucoTrust v0.2 — Results and limitations
 
-Generated from local result JSON by build_report.py. Software version 0.1.0. This is a descriptive research report, not evidence of clinical utility or a validated device-dropout mechanism.
+Generated from local result JSON by build_report.py. Software version 0.2.0. This is a descriptive research report, not evidence of clinical utility or a validated device-dropout mechanism.
 
 An exploratory post-v0.1 extension now reports [participant-paired differences and bootstrap intervals](PAIRED_RESULTS.md). Its estimates and limitations are separate from the descriptive tables below.
 
@@ -103,7 +103,7 @@ The paper describes connectivity loss as a likely explanation, not a verified ev
 2. Complete-window selection may favor better observed periods. Population, device and acquisition differences limit external generalization.
 3. No participant bootstrap, significance test or clinical decision threshold is supplied. Variation across seeds is Monte Carlo variability, not population uncertainty.
 4. Night restriction uses released clock hours, not verified real-world disconnect causes. Date shifts do not recover calendar context.
-5. No meal-response prediction is part of v0.1. Future GlucoPatterns work needs predefined outcomes, person/time splits and leakage checks.
+5. Meal prediction and joint missingness analyses are available in the companion reports linked from README.md. They remain retrospective, protocol-defined exploratory analyses.
 
 ## Reproduction and attribution
 
@@ -116,7 +116,7 @@ This authored report: CC BY-NC-SA 4.0. Source-specific licenses remain applicabl
 | Local result artifact | SHA256 |
 |---|---|
 |outputs/cgmacros/audit.json|13e18320aa2ec39881e836f8d6835691a505cf70471a08460db907385d02f9ec|
-|outputs/cgmacros_audit/robustness.json|173bdf895f5deabf833730c905b6cf2d92031ea0b85d8a81ce22b2dd809d8fea|
+|outputs/cgmacros_audit/robustness.json|5dd498d6d0552644ebd92233b3cdb90179455fa0277016637bf79ee83f35c049|
 |outputs/physiocgm/audit.json|4ab9ac637d88a11cc0abb7abc170e7ddb18427b08e67b897ad855ef55043c864|
 |outputs/shanghai_v5/audit.json|090e8c558cb032f4d099710c2c468bf793e12d2cca03efe4a11ee9bed2387168|
-|outputs/shanghai_v5/experiment/results.json|4c40193869cd975b4f4e3423e0543c5e525b065d1f3a8b36a21415040deda83e|
+|outputs/shanghai_v5/experiment/results.json|49e4771b66b162b61f75c49c49939cf9b10f39175f67d4deb569def0cad32999|

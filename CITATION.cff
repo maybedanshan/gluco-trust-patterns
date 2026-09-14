@@ -2,14 +2,14 @@ cff-version: 1.2.0
 message: "Please cite the software and separately cite source datasets and original papers."
 type: software
 title: "GlucoTrust and GlucoPatterns: reproducible CGM missingness experiments and postprandial glucose pattern analysis"
-version: 0.1.0
+version: 0.2.0
 repository-code: "https://github.com/maybedanshan/gluco-trust-patterns"
 url: "https://github.com/maybedanshan/gluco-trust-patterns"
-date-released: 2026-09-13
+date-released: 2026-09-14
 authors:
   - family-names: Shan
     given-names: Jiacheng
     email: maybedanshan@users.noreply.github.com
     website: "https://github.com/maybedanshan"
 license: MIT
-abstract: "A research prototype studying missingness-induced changes in time-weighted glucose reports. Source data and derived summaries retain separate licenses."
+abstract: "A retrospective research prototype studying missingness-induced changes in time-weighted glucose reports, participant-held-out meal-response prediction, and the effects of missing historical inputs on personalization. Source data and derived summaries retain separate licenses."
